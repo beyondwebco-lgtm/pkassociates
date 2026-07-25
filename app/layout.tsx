@@ -1,0 +1,44 @@
+import type { Metadata } from "next";
+import { Plus_Jakarta_Sans, Inter } from "next/font/google";
+import "./globals.css";
+import { Navbar } from "@/components/navbar";
+import { Footer } from "@/components/footer";
+import { SmoothScroll } from "@/components/smooth-scroll";
+
+const fontHeading = Plus_Jakarta_Sans({
+  variable: "--font-heading",
+  subsets: ["latin"],
+});
+
+const fontSans = Inter({
+  variable: "--font-sans",
+  subsets: ["latin"],
+});
+
+export const metadata: Metadata = {
+  title: "PK & Associates | Expert Accounting, Taxation & Advisory",
+  description: "PK & Associates delivers expert accounting, taxation, business compliance, payroll, advisory, and outsourced finance solutions for businesses across India, the UK, and global markets.",
+};
+
+export default function RootLayout({
+  children,
+}: Readonly<{
+  children: React.ReactNode;
+}>) {
+  return (
+    <html
+      lang="en"
+      className={`${fontHeading.variable} ${fontSans.variable} h-full antialiased`}
+    >
+      <body className="min-h-full flex flex-col font-sans">
+        <SmoothScroll>
+          <Navbar />
+          <main className="flex-grow">
+            {children}
+          </main>
+          <Footer />
+        </SmoothScroll>
+      </body>
+    </html>
+  );
+}

@@ -1,0 +1,75 @@
+"use client";
+
+import { motion } from "framer-motion";
+import Link from "next/link";
+import { ArrowRight, Target, Users, ShieldCheck } from "lucide-react";
+import { Button } from "@/components/ui/button";
+
+export function AboutPreview() {
+  return (
+    <section className="py-24 bg-background overflow-hidden relative">
+      <div className="absolute top-0 right-0 w-1/3 h-full bg-primary/5 rounded-l-full blur-3xl -z-10" />
+      <div className="container mx-auto px-4 grid lg:grid-cols-2 gap-16 items-center">
+        <motion.div 
+          initial={{ opacity: 0, x: -20 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true }}
+          className="space-y-6"
+        >
+          <div className="inline-block bg-accent/20 text-accent px-4 py-1.5 rounded-full font-semibold text-sm mb-2">
+            About PK & Associates
+          </div>
+          <h2 className="text-4xl md:text-5xl font-heading font-bold text-primary leading-tight">
+            A Legacy of Excellence in Global Accounting
+          </h2>
+          <p className="text-lg text-muted-foreground leading-relaxed">
+            PK & Associates is a premium accounting, taxation, and advisory firm dedicated to empowering businesses worldwide. With over 6 years of specialized UK accounting experience and a strong footprint in India and the Middle East, we are your trusted partners for compliance and strategic growth.
+          </p>
+          <div className="pt-4">
+            <Link href="/about">
+              <Button className="h-12 px-8 bg-primary hover:bg-accent text-white text-base font-semibold">
+                Learn More About Us <ArrowRight className="w-5 h-5 ml-2" />
+              </Button>
+            </Link>
+          </div>
+        </motion.div>
+
+        <motion.div 
+          initial={{ opacity: 0, x: 20 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true }}
+          className="grid sm:grid-cols-2 gap-6"
+        >
+          {[
+            {
+              icon: Target,
+              title: "Strategic Vision",
+              desc: "Proactive financial planning that anticipates market changes."
+            },
+            {
+              icon: Users,
+              title: "Dedicated Experts",
+              desc: "Offshore professionals highly trained in international standards."
+            },
+            {
+              icon: ShieldCheck,
+              title: "100% Compliant",
+              desc: "Strict adherence to HMRC, GST, and local regulatory laws."
+            }
+          ].map((item, i) => (
+            <div 
+              key={i} 
+              className={`p-6 rounded-3xl bg-white border shadow-sm flex flex-col gap-4 ${i === 2 ? 'sm:col-span-2' : ''}`}
+            >
+              <div className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center">
+                <item.icon className="w-6 h-6 text-primary" />
+              </div>
+              <h3 className="text-xl font-heading font-bold text-primary">{item.title}</h3>
+              <p className="text-muted-foreground">{item.desc}</p>
+            </div>
+          ))}
+        </motion.div>
+      </div>
+    </section>
+  );
+}
