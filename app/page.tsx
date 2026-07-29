@@ -40,23 +40,23 @@ export default function Home() {
             transition={{ duration: 0.8, ease: "easeOut" }}
             className="flex flex-col gap-6"
           >
-            <div className="inline-block bg-accent/20 text-accent px-4 py-1.5 rounded-full font-semibold text-sm w-fit">
+            <div className="inline-block bg-accent/20 text-accent px-3.5 sm:px-4 py-1.5 rounded-2xl sm:rounded-full font-semibold text-xs sm:text-sm max-w-full text-balance">
               Simplifying Accounting. Strengthening Businesses. Driving Growth.
             </div>
-            <h1 className="text-5xl lg:text-7xl font-bold font-heading leading-tight tracking-tight text-primary mt-4">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold font-heading leading-tight tracking-tight text-primary mt-4 break-words">
               Accounting, Tax & Business Compliance Solutions for <span className="text-accent">Growing Businesses</span>
             </h1>
-            <p className="text-lg text-muted-foreground max-w-xl leading-relaxed">
+            <p className="text-base sm:text-lg text-muted-foreground max-w-xl leading-relaxed">
               PK & Associates provides end-to-end accounting, bookkeeping, taxation, payroll, compliance, and outsourced finance solutions that help businesses stay compliant, improve financial visibility, and focus on sustainable growth.
             </p>
-            <div className="flex flex-wrap gap-4 pt-4">
-              <Link href="/contact">
-                <Button size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90 h-14 px-8 text-base font-semibold">
+            <div className="flex flex-col sm:flex-row gap-4 pt-4 w-full sm:w-auto">
+              <Link href="/contact" className="w-full sm:w-auto">
+                <Button size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90 active:bg-primary/95 h-14 px-8 text-base font-semibold w-full sm:w-auto transition-all duration-200 focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2">
                   Get Free Consultation
                 </Button>
               </Link>
-              <Link href="/contact">
-                <Button size="lg" variant="outline" className="h-14 px-8 text-base border-primary/20 hover:bg-primary/5">
+              <Link href="/contact" className="w-full sm:w-auto">
+                <Button size="lg" variant="outline" className="h-14 px-8 text-base font-semibold border-primary text-primary hover:bg-primary hover:text-primary-foreground active:bg-primary/90 w-full sm:w-auto transition-all duration-200 focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2">
                   Request Proposal
                 </Button>
               </Link>

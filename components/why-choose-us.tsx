@@ -46,7 +46,7 @@ export function WhyChooseUs() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.1 }}
-            className="text-3xl md:text-5xl font-heading font-bold text-primary mb-6"
+            className="text-2xl sm:text-3xl md:text-5xl font-heading font-bold text-primary mb-6 break-words"
           >
             Why Choose PK & Associates
           </motion.h2>
@@ -55,13 +55,13 @@ export function WhyChooseUs() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.2 }}
-            className="text-lg text-muted-foreground max-w-2xl mx-auto"
+            className="text-base sm:text-lg text-muted-foreground max-w-2xl mx-auto"
           >
             Partnering with us means you gain a dedicated extension of your team, focused on accuracy, compliance, and growth.
           </motion.p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-4 sm:gap-6">
           {whyChooseUs.map((reason, index) => {
             const Icon = icons[index % icons.length];
             return (

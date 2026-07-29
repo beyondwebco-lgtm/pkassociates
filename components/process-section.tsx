@@ -18,19 +18,19 @@ export function ProcessSection() {
     <section className="py-24 bg-secondary/20">
       <div className="container mx-auto px-4">
         <div className="text-center max-w-2xl mx-auto mb-16">
-          <h2 className="text-3xl md:text-5xl font-heading font-bold text-primary mb-4">
+          <h2 className="text-2xl sm:text-3xl md:text-5xl font-heading font-bold text-primary mb-4 break-words">
             How We Work
           </h2>
-          <p className="text-muted-foreground text-lg">
+          <p className="text-base sm:text-lg text-muted-foreground">
             A seamless, transparent process designed to integrate expertly with your operations.
           </p>
         </div>
 
         <div className="relative max-w-4xl mx-auto">
           {/* Connecting Line */}
-          <div className="absolute top-1/2 left-0 w-full h-1 bg-gradient-to-r from-primary/10 via-accent to-primary/10 -translate-y-1/2 hidden md:block" />
+          <div className="absolute top-1/2 left-0 w-full h-1 bg-gradient-to-r from-primary/10 via-accent to-primary/10 -translate-y-1/2 hidden lg:block" />
           
-          <div className="grid grid-cols-2 md:grid-cols-7 gap-6 md:gap-0 relative z-10">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-7 gap-6 lg:gap-2 relative z-10">
             {steps.map((step, index) => (
               <motion.div
                 key={index}

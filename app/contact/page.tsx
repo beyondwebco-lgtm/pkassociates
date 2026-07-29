@@ -21,7 +21,7 @@ export default function ContactPage() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.1 }}
-            className="text-4xl md:text-6xl font-heading font-bold mb-6"
+            className="text-3xl sm:text-4xl md:text-6xl font-heading font-bold mb-6 break-words"
           >
             Let&apos;s Discuss Your Business Needs
           </motion.h1>
@@ -113,23 +113,23 @@ export default function ContactPage() {
               initial={{ opacity: 0, x: 20 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ delay: 0.4 }}
-              className="bg-white p-8 md:p-12 rounded-3xl border shadow-xl relative"
+              className="bg-card text-card-foreground p-5 sm:p-8 md:p-12 rounded-3xl border border-border shadow-xl relative w-full"
             >
               {/* Quick Response Badge */}
-              <div className="absolute -top-5 right-8 bg-accent text-accent-foreground px-4 py-2 rounded-full text-sm font-semibold flex items-center shadow-md">
-                <Zap className="w-4 h-4 mr-2" /> Quick Response Promise
+              <div className="absolute -top-5 right-4 sm:right-8 bg-accent text-accent-foreground px-3 sm:px-4 py-1.5 sm:py-2 rounded-full text-xs sm:text-sm font-semibold flex items-center shadow-md">
+                <Zap className="w-4 h-4 mr-1.5 sm:mr-2 flex-shrink-0" /> Quick Response Promise
               </div>
 
-              <h2 className="text-3xl font-heading font-bold text-primary mb-2">Book a Consultation</h2>
-              <p className="text-muted-foreground mb-8">Fill out the form below and our team will get back to you within 2 hours.</p>
+              <h2 className="text-2xl sm:text-3xl font-heading font-bold text-primary mb-2">Book a Consultation</h2>
+              <p className="text-muted-foreground text-sm sm:text-base mb-8">Fill out the form below and our team will get back to you within 2 hours.</p>
 
               <form className="space-y-6">
-                <div className="grid grid-cols-2 gap-6">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
                   <div className="space-y-2">
                     <label className="text-sm font-medium text-foreground">First Name</label>
                     <input 
                       type="text" 
-                      className="w-full h-12 px-4 rounded-xl border bg-background focus:outline-none focus:ring-2 focus:ring-accent/50" 
+                      className="w-full h-12 px-4 rounded-xl border border-input bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-ring" 
                       placeholder="John"
                     />
                   </div>
@@ -137,7 +137,7 @@ export default function ContactPage() {
                     <label className="text-sm font-medium text-foreground">Last Name</label>
                     <input 
                       type="text" 
-                      className="w-full h-12 px-4 rounded-xl border bg-background focus:outline-none focus:ring-2 focus:ring-accent/50" 
+                      className="w-full h-12 px-4 rounded-xl border border-input bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-ring" 
                       placeholder="Doe"
                     />
                   </div>
@@ -146,7 +146,7 @@ export default function ContactPage() {
                   <label className="text-sm font-medium text-foreground">Email Address</label>
                   <input 
                     type="email" 
-                    className="w-full h-12 px-4 rounded-xl border bg-background focus:outline-none focus:ring-2 focus:ring-accent/50" 
+                    className="w-full h-12 px-4 rounded-xl border border-input bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-ring" 
                     placeholder="john@example.com"
                   />
                 </div>
@@ -154,13 +154,13 @@ export default function ContactPage() {
                   <label className="text-sm font-medium text-foreground">Phone Number</label>
                   <input 
                     type="tel" 
-                    className="w-full h-12 px-4 rounded-xl border bg-background focus:outline-none focus:ring-2 focus:ring-accent/50" 
+                    className="w-full h-12 px-4 rounded-xl border border-input bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-ring" 
                     placeholder="+91 98765 43210"
                   />
                 </div>
                 <div className="space-y-2">
                   <label className="text-sm font-medium text-foreground">Service Required</label>
-                  <select className="w-full h-12 px-4 rounded-xl border bg-background focus:outline-none focus:ring-2 focus:ring-accent/50 text-muted-foreground">
+                  <select className="w-full h-12 px-4 rounded-xl border border-input bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-ring">
                     <option>UK Outsourcing</option>
                     <option>India Accounting & Tax</option>
                     <option>Global Services</option>
@@ -170,11 +170,11 @@ export default function ContactPage() {
                 <div className="space-y-2">
                   <label className="text-sm font-medium text-foreground">Message</label>
                   <textarea 
-                    className="w-full min-h-[120px] p-4 rounded-xl border bg-background focus:outline-none focus:ring-2 focus:ring-accent/50 resize-none"
+                    className="w-full min-h-[120px] p-4 rounded-xl border border-input bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-ring resize-none"
                     placeholder="Tell us about your business needs..."
                   ></textarea>
                 </div>
-                <Button className="w-full h-14 bg-primary hover:bg-accent text-white text-lg font-semibold">
+                <Button className="w-full h-14 bg-primary text-primary-foreground hover:bg-accent hover:text-accent-foreground text-base sm:text-lg font-semibold transition-all duration-200 active:scale-[0.98]">
                   Submit Request
                 </Button>
               </form>

@@ -14,7 +14,7 @@ export default function IndustriesOverviewPage() {
           <motion.h1 
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            className="text-4xl md:text-6xl font-heading font-bold mb-6"
+            className="text-3xl sm:text-4xl md:text-6xl font-heading font-bold mb-6 break-words"
           >
             Industries We Serve
           </motion.h1>
@@ -22,7 +22,7 @@ export default function IndustriesOverviewPage() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.1 }}
-            className="text-lg text-primary-foreground/80"
+            className="text-base sm:text-lg text-primary-foreground/80"
           >
             Deep domain expertise across various sectors, delivering specialized accounting and tax solutions.
           </motion.p>
@@ -31,7 +31,7 @@ export default function IndustriesOverviewPage() {
 
       <section className="py-24">
         <div className="container mx-auto px-4">
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
             {industries.map((industry, index) => (
               <motion.div
                 key={industry.id}
@@ -41,7 +41,7 @@ export default function IndustriesOverviewPage() {
                 transition={{ delay: index * 0.05 }}
               >
                 <Link href={`/industries/${industry.id}`} className="block h-full group">
-                  <div className={`h-full p-8 rounded-3xl bg-white border shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col ${industry.isPremium ? 'border-accent/50 bg-accent/5 ring-1 ring-accent/20' : ''}`}>
+                  <div className={`h-full p-6 sm:p-8 rounded-3xl bg-white border shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col ${industry.isPremium ? 'border-accent/50 bg-accent/5 ring-1 ring-accent/20' : ''}`}>
                     <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-6 group-hover:scale-110 group-hover:bg-accent/20 transition-all">
                       <Building className="w-6 h-6 text-primary group-hover:text-accent" />
                     </div>

@@ -13,7 +13,7 @@ export default function AboutPage() {
           <motion.h1 
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            className="text-4xl md:text-6xl font-heading font-bold mb-6"
+            className="text-3xl sm:text-4xl md:text-6xl font-heading font-bold mb-6 break-words"
           >
             About PK & Associates
           </motion.h1>
@@ -21,7 +21,7 @@ export default function AboutPage() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.1 }}
-            className="text-lg text-primary-foreground/80"
+            className="text-base sm:text-lg text-primary-foreground/80"
           >
             A premier accounting, taxation, and business advisory firm empowering global businesses with precision, compliance, and strategic foresight.
           </motion.p>
@@ -30,27 +30,27 @@ export default function AboutPage() {
 
       {/* Intro */}
       <section className="py-24 bg-background">
-        <div className="container mx-auto px-4 grid md:grid-cols-2 gap-16 items-center">
+        <div className="container mx-auto px-4 grid md:grid-cols-2 gap-10 md:gap-16 items-center">
           <motion.div
             initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
           >
-            <h2 className="text-3xl md:text-4xl font-heading font-bold text-primary mb-6">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-heading font-bold text-primary mb-6 break-words">
               Who We Are
             </h2>
-            <p className="text-muted-foreground text-lg mb-6 leading-relaxed">
+            <p className="text-muted-foreground text-base sm:text-lg mb-6 leading-relaxed">
               Based in India, PK & Associates is a modern accounting and advisory firm dedicated to delivering world-class financial solutions. We combine technical expertise with deep industry knowledge to serve clients across India, the UK, the UAE, and other international markets.
             </p>
-            <p className="text-muted-foreground text-lg leading-relaxed">
-              Whether you are a local startup seeking reliable bookkeeping, or a UK accountancy practice looking to outsource complex year-end accounts, our team of dedicated professionals ensures 100% compliance and absolute accuracy.
+            <p className="text-muted-foreground text-base sm:text-lg leading-relaxed">
+              Whether you are a local startup seeking reliable bookkeeping, or a UK accountancy practice looking to outsource complex year-end accounts, our team of dedicated professionals ensures statutory compliance and absolute accuracy.
             </p>
           </motion.div>
           <motion.div
             initial={{ opacity: 0, scale: 0.95 }}
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
-            className="relative h-[400px] rounded-3xl overflow-hidden bg-secondary/50 border border-border flex items-center justify-center p-8"
+            className="relative h-[300px] sm:h-[400px] rounded-3xl overflow-hidden bg-secondary/50 border border-border flex items-center justify-center p-6 sm:p-8"
           >
             {/* Abstract Graphic */}
             <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-accent/10" />
@@ -72,15 +72,15 @@ export default function AboutPage() {
 
       {/* Mission & Vision */}
       <section className="py-24 bg-secondary/20">
-        <div className="container mx-auto px-4 grid md:grid-cols-3 gap-8">
+        <div className="container mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="bg-white p-8 rounded-3xl border shadow-sm"
+            className="bg-white p-6 sm:p-8 rounded-3xl border shadow-sm"
           >
             <Target className="w-10 h-10 text-accent mb-6" />
-            <h3 className="text-2xl font-bold font-heading mb-4 text-primary">Our Mission</h3>
+            <h3 className="text-xl sm:text-2xl font-bold font-heading mb-4 text-primary">Our Mission</h3>
             <p className="text-muted-foreground leading-relaxed">
               To simplify complex financial and regulatory challenges for businesses worldwide, providing accurate, timely, and strategic insights that drive sustainable growth.
             </p>
@@ -90,10 +90,10 @@ export default function AboutPage() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.1 }}
-            className="bg-white p-8 rounded-3xl border shadow-sm"
+            className="bg-white p-6 sm:p-8 rounded-3xl border shadow-sm"
           >
             <Eye className="w-10 h-10 text-accent mb-6" />
-            <h3 className="text-2xl font-bold font-heading mb-4 text-primary">Our Vision</h3>
+            <h3 className="text-xl sm:text-2xl font-bold font-heading mb-4 text-primary">Our Vision</h3>
             <p className="text-muted-foreground leading-relaxed">
               To be the most trusted and preferred global partner for accounting, compliance, and financial advisory, recognized for our uncompromising quality and modern approach.
             </p>
@@ -103,10 +103,10 @@ export default function AboutPage() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.2 }}
-            className="bg-white p-8 rounded-3xl border shadow-sm"
+            className="bg-white p-6 sm:p-8 rounded-3xl border shadow-sm"
           >
             <ShieldCheck className="w-10 h-10 text-accent mb-6" />
-            <h3 className="text-2xl font-bold font-heading mb-4 text-primary">Our Values</h3>
+            <h3 className="text-xl sm:text-2xl font-bold font-heading mb-4 text-primary">Our Values</h3>
             <ul className="space-y-3">
               {['Absolute Integrity', 'Client-First Approach', 'Continuous Innovation', 'Global Standards'].map((val, i) => (
                 <li key={i} className="flex items-center text-muted-foreground">

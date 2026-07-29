@@ -86,3 +86,28 @@ This document records the chronological history of updates, content restructurin
 * **Pending Work / Requiring Legal Verification:**
   * Draft legal pages (`/privacy-policy`, `/terms`, `/disclaimer`) require client legal counsel verification prior to final deployment.
   * Testimonials section will remain hidden until verified client reviews are provided.
+
+---
+
+## [July 29, 2026] - Phase 5: Responsive Scaling & Request Proposal Styling Audit
+* **Prompt Summary:** Audit and fix responsive scaling, mobile layout, button stacking, form padding, grid column scaling across 8 target viewports (320px, 375px, 390px, 430px, 768px, 1024px, 1280px, 1440px), and enhance Request Proposal button styling.
+* **Files Modified:**
+  * [`app/globals.css`](file:///c:/Users/Arun/Documents/GitHub/pkassociates/app/globals.css)
+  * [`app/page.tsx`](file:///c:/Users/Arun/Documents/GitHub/pkassociates/app/page.tsx)
+  * [`components/final-cta.tsx`](file:///c:/Users/Arun/Documents/GitHub/pkassociates/components/final-cta.tsx)
+  * [`app/contact/page.tsx`](file:///c:/Users/Arun/Documents/GitHub/pkassociates/app/contact/page.tsx)
+  * [`components/industries-section.tsx`](file:///c:/Users/Arun/Documents/GitHub/pkassociates/components/industries-section.tsx)
+  * [`components/process-section.tsx`](file:///c:/Users/Arun/Documents/GitHub/pkassociates/components/process-section.tsx)
+  * [`components/software-expertise.tsx`](file:///c:/Users/Arun/Documents/GitHub/pkassociates/components/software-expertise.tsx)
+  * [`components/global-services.tsx`](file:///c:/Users/Arun/Documents/GitHub/pkassociates/components/global-services.tsx)
+  * [`components/services-overview.tsx`](file:///c:/Users/Arun/Documents/GitHub/pkassociates/components/services-overview.tsx)
+  * [`components/uk-outsourcing-preview.tsx`](file:///c:/Users/Arun/Documents/GitHub/pkassociates/components/uk-outsourcing-preview.tsx)
+  * [`HISTORY.md`](file:///c:/Users/Arun/Documents/GitHub/pkassociates/HISTORY.md)
+* **Scaling & Responsive Fixes Completed:**
+  * Added `overflow-x: hidden`, `max-width: 100vw`, and `overflow-wrap: break-word` in `globals.css` to prevent horizontal scrolling on narrow 320px screens.
+  * Made hero heading fluid (`text-3xl sm:text-5xl lg:text-7xl`) and enabled hero buttons to stack full-width on mobile viewports.
+  * Converted contact form layout into `grid-cols-1 sm:grid-cols-2` with responsive padding (`p-5 sm:p-8 md:p-12`) so form boxes fit 320px screens without clipping.
+  * Scaled grid column configurations across Industries, Process, Software, Global Services, India Services, and UK Outsourcing to `grid-cols-1 sm:grid-cols-2...` for seamless viewing across 320px, 375px, 390px, 430px, 768px, 1024px, 1280px, and 1440px viewports.
+* **Request Proposal Styling Updates:**
+  * Enhanced "Request Proposal" buttons with exact theme color token reuse, clear default, hover (`hover:bg-secondary hover:border-primary/50`), focus-visible (`ring-2 ring-ring ring-offset-2`), active (`active:scale-[0.98]`), and disabled states.
+* **Build / Lint Result:** `npm run lint` PASSED (0 errors, 0 warnings), `npm run build` PASSED (54 static pages generated in ~465ms).

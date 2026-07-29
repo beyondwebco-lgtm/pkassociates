@@ -17,7 +17,7 @@ export default function PrivacyPolicyPage() {
   return (
     <div className="flex flex-col min-h-screen pt-28 pb-20">
       <div className="container mx-auto px-4 max-w-4xl text-foreground">
-        <h1 className="text-4xl md:text-5xl font-heading font-bold text-primary mb-6">
+        <h1 className="text-3xl sm:text-4xl md:text-5xl font-heading font-bold text-primary mb-6 break-words">
           Privacy Policy
         </h1>
         <p className="text-sm text-muted-foreground mb-8">

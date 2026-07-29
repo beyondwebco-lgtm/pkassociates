@@ -34,7 +34,7 @@ export function ServiceLayout({ title, description, bulletPoints, bestFor, categ
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.1 }}
-            className="text-4xl md:text-6xl font-heading font-bold mb-6"
+            className="text-3xl sm:text-4xl md:text-6xl font-heading font-bold mb-6 break-words"
           >
             {title}
           </motion.h1>
@@ -42,7 +42,7 @@ export function ServiceLayout({ title, description, bulletPoints, bestFor, categ
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2 }}
-            className="text-lg md:text-xl text-primary-foreground/80 leading-relaxed mb-8 max-w-2xl mx-auto"
+            className="text-base sm:text-lg md:text-xl text-primary-foreground/80 leading-relaxed mb-8 max-w-2xl mx-auto"
           >
             {description}
           </motion.p>
@@ -62,15 +62,15 @@ export function ServiceLayout({ title, description, bulletPoints, bestFor, categ
 
       {/* Main Content (Split Layout) */}
       <section className="py-24 bg-background">
-        <div className="container mx-auto px-4 grid lg:grid-cols-12 gap-16">
+        <div className="container mx-auto px-4 grid lg:grid-cols-12 gap-8 lg:gap-16">
           
           {/* Left Column: Bullet Points & Content */}
           <div className="lg:col-span-8 space-y-12">
             <div>
-              <h2 className="text-3xl font-heading font-bold text-primary mb-8">
+              <h2 className="text-2xl sm:text-3xl font-heading font-bold text-primary mb-6 sm:mb-8 break-words">
                 Comprehensive Service Inclusions
               </h2>
-              <div className="grid sm:grid-cols-2 gap-4">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 {bulletPoints.map((point, i) => (
                   <motion.div
                     key={i}
@@ -97,7 +97,7 @@ export function ServiceLayout({ title, description, bulletPoints, bestFor, categ
 
           {/* Right Column: Highlights & Why Choose Us Sidebar */}
           <div className="lg:col-span-4 space-y-8">
-            <div className="bg-white p-8 rounded-3xl border shadow-sm sticky top-32">
+            <div className="bg-white p-6 sm:p-8 rounded-3xl border shadow-sm sticky top-32">
               <h3 className="text-xl font-heading font-bold text-primary mb-6">Service Highlights</h3>
               <ul className="space-y-4 mb-8">
                 {serviceHighlights.slice(0, 4).map((highlight, i) => (
@@ -119,7 +119,7 @@ export function ServiceLayout({ title, description, bulletPoints, bestFor, categ
               </ul>
 
               <Link href="/contact" className="block w-full">
-                <Button className="w-full h-12 bg-primary hover:bg-accent text-white">
+                <Button className="w-full h-12 bg-primary text-primary-foreground hover:bg-accent hover:text-accent-foreground active:bg-accent/90 focus-visible:ring-2 focus-visible:ring-ring font-semibold transition-all">
                   Request a Quote
                 </Button>
               </Link>
