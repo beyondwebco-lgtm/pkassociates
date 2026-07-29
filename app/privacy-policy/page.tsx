@@ -1,14 +1,14 @@
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Privacy Policy | PK & Associates",
-  description: "Privacy Policy for PK & Associates accounting and business advisory services.",
+  title: "Privacy Policy | PKA Global",
+  description: "Privacy Policy for PKA Global accounting and business advisory services.",
   alternates: {
     canonical: "/privacy-policy",
   },
   openGraph: {
-    title: "Privacy Policy | PK & Associates",
-    description: "Privacy Policy for PK & Associates accounting and business advisory services.",
+    title: "Privacy Policy | PKA Global",
+    description: "Privacy Policy for PKA Global accounting and business advisory services.",
     url: "/privacy-policy",
   },
 };
@@ -63,7 +63,7 @@ export default function PrivacyPolicyPage() {
           <section>
             <h2 className="text-2xl font-heading font-bold text-primary mb-3">6. Your Rights & Contact</h2>
             <p>
-              You have the right to request access to, correction of, or deletion of your personal data held by us. For any privacy-related questions or requests, please contact PK & Associates through our official contact page.
+              You have the right to request access to, correction of, or deletion of your personal data held by us. For any privacy-related questions or requests, please contact PKA Global through our official contact page.
             </p>
           </section>
         </div>

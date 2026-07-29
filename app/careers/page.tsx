@@ -3,14 +3,14 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 
 export const metadata: Metadata = {
-  title: "Careers | PK & Associates",
-  description: "Join PK & Associates - Build your career with experienced accounting, taxation, and business advisory professionals.",
+  title: "Careers | PKA Global",
+  description: "Join PKA Global - Build your career with experienced accounting, taxation, and business advisory professionals.",
   alternates: {
     canonical: "/careers",
   },
   openGraph: {
-    title: "Careers | PK & Associates",
-    description: "Join PK & Associates - Build your career with experienced accounting, taxation, and business advisory professionals.",
+    title: "Careers | PKA Global",
+    description: "Join PKA Global - Build your career with experienced accounting, taxation, and business advisory professionals.",
     url: "/careers",
   },
 };
@@ -31,7 +31,7 @@ export default function CareersPage() {
             Join Our Growing Team
           </h2>
           <p className="text-muted-foreground leading-relaxed mb-6">
-            At PK & Associates, we provide an environment that fosters growth, technical excellence, and client-first commitment across our global services.
+            At PKA Global, we provide an environment that fosters growth, technical excellence, and client-first commitment across our global services.
           </p>
           <Link href="/contact" className="inline-block w-full sm:w-auto">
             <Button size="lg" className="w-full sm:w-auto bg-primary text-primary-foreground hover:bg-primary/90 active:bg-primary/95 focus-visible:ring-2 focus-visible:ring-ring font-semibold h-12 px-8">

@@ -159,4 +159,35 @@ This document records the chronological history of updates, content restructurin
   * **Request Proposal Black Theme:** Styled all Request Proposal buttons with `bg-black text-white border border-black hover:bg-slate-800 hover:text-white active:bg-slate-950 focus-visible:ring-2 focus-visible:ring-slate-400 focus-visible:ring-offset-2`, ensuring full visual consistency across light and dark background sections.
 * **Build / Lint Result:** `npm run lint` PASSED (0 errors, 0 warnings), `npm run build` PASSED (54 static pages generated in ~569ms).
 
+---
+
+## [July 29, 2026] - Phase 8: Complete Brand & Business Address Migration to PKA Global
+* **Prompt Summary:** Migrated all public-facing brand references from "PK & Associates" to "PKA Global" and updated the physical business address to the new Puppalguda, Hyderabad headquarters across site components, pages, metadata, JSON-LD schemas, and Google Maps embed links.
+* **Files Modified:**
+  * [`AGENTS.md`](file:///c:/Users/Arun/Documents/GitHub/pkassociates/AGENTS.md)
+  * [`CLAUDE.md`](file:///c:/Users/Arun/Documents/GitHub/pkassociates/CLAUDE.md)
+  * [`app/layout.tsx`](file:///c:/Users/Arun/Documents/GitHub/pkassociates/app/layout.tsx)
+  * [`app/page.tsx`](file:///c:/Users/Arun/Documents/GitHub/pkassociates/app/page.tsx)
+  * [`components/navbar.tsx`](file:///c:/Users/Arun/Documents/GitHub/pkassociates/components/navbar.tsx)
+  * [`components/about-preview.tsx`](file:///c:/Users/Arun/Documents/GitHub/pkassociates/components/about-preview.tsx)
+  * [`components/why-choose-us.tsx`](file:///c:/Users/Arun/Documents/GitHub/pkassociates/components/why-choose-us.tsx)
+  * [`components/final-cta.tsx`](file:///c:/Users/Arun/Documents/GitHub/pkassociates/components/final-cta.tsx)
+  * [`components/footer.tsx`](file:///c:/Users/Arun/Documents/GitHub/pkassociates/components/footer.tsx)
+  * [`components/testimonials-section.tsx`](file:///c:/Users/Arun/Documents/GitHub/pkassociates/components/testimonials-section.tsx)
+  * [`app/about/page.tsx`](file:///c:/Users/Arun/Documents/GitHub/pkassociates/app/about/page.tsx)
+  * [`app/contact/page.tsx`](file:///c:/Users/Arun/Documents/GitHub/pkassociates/app/contact/page.tsx)
+  * [`app/careers/page.tsx`](file:///c:/Users/Arun/Documents/GitHub/pkassociates/app/careers/page.tsx)
+  * [`app/resources/page.tsx`](file:///c:/Users/Arun/Documents/GitHub/pkassociates/app/resources/page.tsx)
+  * [`app/privacy-policy/page.tsx`](file:///c:/Users/Arun/Documents/GitHub/pkassociates/app/privacy-policy/page.tsx)
+  * [`app/terms/page.tsx`](file:///c:/Users/Arun/Documents/GitHub/pkassociates/app/terms/page.tsx)
+  * [`app/disclaimer/page.tsx`](file:///c:/Users/Arun/Documents/GitHub/pkassociates/app/disclaimer/page.tsx)
+  * [`HISTORY.md`](file:///c:/Users/Arun/Documents/GitHub/pkassociates/HISTORY.md)
+* **Key Migration Details:**
+  * **Brand Name:** Replaced all public-facing occurrences of "PK & Associates" with "PKA Global" in headers, footers, logo badge (`PKA Global`), copy text, page titles, Open Graph tags, and legal drafts.
+  * **Business Address:** Updated office address everywhere to `PKA Global, Unit No. 201, 3-84/22, MS Bright Plaza, Plot No. 22, Puppalguda, Hyderabad, Telangana 500089, India`.
+  * **Structured Data:** Injected complete `PostalAddress` object matching the Puppalguda address into the `AccountingService` schema in `layout.tsx`.
+  * **Map Integration:** Updated Google Maps embed query in `contact/page.tsx` to center directly on `MS Bright Plaza, Plot No. 22, Puppalguda, Hyderabad, Telangana 500089, India`.
+* **Build / Lint Result:** `npm run lint` PASSED (0 errors, 0 warnings), `npm run build` PASSED (54 static pages generated in ~569ms).
+
+
 

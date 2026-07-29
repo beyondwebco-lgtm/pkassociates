@@ -40,11 +40,11 @@ export function Navbar() {
       <div className="container mx-auto px-4 flex items-center justify-between">
         {/* Logo */}
         <Link href="/" className="flex items-center gap-2 group">
-          <div className="w-10 h-10 bg-primary rounded-lg flex items-center justify-center text-primary-foreground font-bold font-heading text-xl group-hover:bg-accent transition-colors flex-shrink-0">
-            PK
+          <div className="w-10 h-10 bg-primary rounded-lg flex items-center justify-center text-primary-foreground font-bold font-heading text-sm group-hover:bg-accent transition-colors flex-shrink-0">
+            PKA
           </div>
           <span className={`font-heading font-bold text-lg sm:text-xl tracking-tight ${isScrolled || pathname !== '/' ? 'text-foreground' : 'text-primary'}`}>
-            & Associates
+            Global
           </span>
         </Link>
 

@@ -48,7 +48,7 @@ export function WhyChooseUs() {
             transition={{ delay: 0.1 }}
             className="text-2xl sm:text-3xl md:text-5xl font-heading font-bold text-primary mb-6 break-words"
           >
-            Why Choose PK & Associates
+            Why Choose PKA Global
           </motion.h2>
           <motion.p 
             initial={{ opacity: 0, y: 20 }}

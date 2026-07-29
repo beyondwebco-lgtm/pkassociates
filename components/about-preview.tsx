@@ -17,14 +17,14 @@ export function AboutPreview() {
           className="space-y-6"
         >
           <div className="inline-block bg-accent/20 text-accent px-4 py-1.5 rounded-full font-semibold text-sm mb-2">
-            About PK & Associates
+            About PKA Global
           </div>
           <h2 className="text-2xl sm:text-3xl md:text-5xl font-heading font-bold text-primary leading-tight break-words">
             Your Trusted Accounting & Business Advisory Partner
           </h2>
           <div className="space-y-4">
             <p className="text-base sm:text-lg text-muted-foreground leading-relaxed">
-              PK & Associates is a professional accounting, taxation and business advisory firm delivering reliable financial solutions for businesses across India and international markets.
+              PKA Global is a professional accounting, taxation and business advisory firm delivering reliable financial solutions for businesses across India and international markets.
             </p>
             <p className="text-base sm:text-lg text-muted-foreground leading-relaxed">
               Our experienced professionals help businesses manage accounting, taxation, payroll, regulatory compliance and financial reporting with accuracy, efficiency and a client-first approach.

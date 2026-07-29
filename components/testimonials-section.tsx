@@ -5,7 +5,7 @@ import { Star } from "lucide-react";
 
 const testimonials = [
   {
-    text: "PK & Associates completely transformed our UK accounting outsourcing. Their attention to detail and knowledge of HMRC regulations is unmatched.",
+    text: "PKA Global completely transformed our UK accounting outsourcing. Their attention to detail and knowledge of HMRC regulations is unmatched.",
     author: "David M.",
     company: "UK Accountancy Firm",
   },

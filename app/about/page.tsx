@@ -15,7 +15,7 @@ export default function AboutPage() {
             animate={{ opacity: 1, y: 0 }}
             className="text-3xl sm:text-4xl md:text-6xl font-heading font-bold mb-6 break-words"
           >
-            About PK & Associates
+            About PKA Global
           </motion.h1>
           <motion.p 
             initial={{ opacity: 0, y: 20 }}
@@ -40,7 +40,7 @@ export default function AboutPage() {
               Who We Are
             </h2>
             <p className="text-muted-foreground text-base sm:text-lg mb-6 leading-relaxed">
-              Based in India, PK & Associates is a modern accounting and advisory firm dedicated to delivering world-class financial solutions. We combine technical expertise with deep industry knowledge to serve clients across India, the UK, the UAE, and other international markets.
+              Based in India, PKA Global is a modern accounting and advisory firm dedicated to delivering world-class financial solutions. We combine technical expertise with deep industry knowledge to serve clients across India, the UK, the UAE, and other international markets.
             </p>
             <p className="text-muted-foreground text-base sm:text-lg leading-relaxed">
               Whether you are a local startup seeking reliable bookkeeping, or a UK accountancy practice looking to outsource complex year-end accounts, our team of dedicated professionals ensures statutory compliance and absolute accuracy.

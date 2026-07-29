@@ -46,7 +46,7 @@ export default function Home() {
               Accounting, Tax & Business Compliance Solutions for <span className="text-accent">Growing Businesses</span>
             </h1>
             <p className="mx-auto max-w-2xl text-base sm:text-lg md:text-xl text-muted-foreground leading-relaxed mb-8">
-              PK & Associates provides end-to-end accounting, bookkeeping, taxation, payroll, compliance, and outsourced finance solutions that help businesses stay compliant, improve financial visibility, and focus on sustainable growth.
+              PKA Global provides end-to-end accounting, bookkeeping, taxation, payroll, compliance, and outsourced finance solutions that help businesses stay compliant, improve financial visibility, and focus on sustainable growth.
             </p>
             <div className="flex w-full flex-col justify-center gap-3 sm:w-auto sm:flex-row items-center">
               <Link href="/contact" className="w-full sm:w-auto">

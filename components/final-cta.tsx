@@ -24,7 +24,7 @@ export function FinalCTA() {
           transition={{ delay: 0.1 }}
           className="text-base sm:text-lg md:text-xl text-primary-foreground/80 mb-10 max-w-2xl mx-auto leading-relaxed"
         >
-          Speak with our experts to discover how PK & Associates can streamline your accounting, taxation, payroll and compliance requirements.
+          Speak with our experts to discover how PKA Global can streamline your accounting, taxation, payroll and compliance requirements.
         </motion.p>
         <motion.div
           initial={{ opacity: 0, y: 20 }}

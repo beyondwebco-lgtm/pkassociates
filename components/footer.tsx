@@ -9,7 +9,7 @@ export function Footer() {
         {/* Brand & Socials */}
         <div className="lg:col-span-1">
           <Link href="/" className="inline-block mb-6">
-            <span className="font-heading text-2xl font-bold text-primary tracking-tight">PK & Associates</span>
+            <span className="font-heading text-2xl font-bold text-primary tracking-tight">PKA Global</span>
           </Link>
           <p className="text-sm text-muted-foreground leading-relaxed mb-8">
             Delivering expert accounting, taxation, and advisory solutions for businesses across India, the UK, and global markets.
@@ -94,7 +94,7 @@ export function Footer() {
 
       <div className="container mx-auto px-4 mt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-center sm:text-left text-sm text-muted-foreground">
         <div>
-          &copy; {new Date().getFullYear()} PK & Associates. All rights reserved.
+          &copy; {new Date().getFullYear()} PKA Global. All rights reserved.
         </div>
         <div className="flex flex-wrap items-center justify-center sm:justify-end gap-4 sm:gap-6">
           <Link href="/privacy-policy" className="hover:text-primary transition-colors">Privacy Policy</Link>

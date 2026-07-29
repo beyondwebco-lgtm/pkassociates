@@ -1,21 +1,21 @@
 <!-- BEGIN:nextjs-agent-rules -->
 # Next.js Agent Guidelines & Project Context
 
-This file defines the complete technical and business context for AI agents working on the PK & Associates project.
+This file defines the complete technical and business context for AI agents working on the PKA Global project.
 
 ---
 
 ## 1. Project Overview & Business Purpose
-* **Project Name:** PK & Associates Accounting & Business Advisory Website
+* **Project Name:** PKA Global Accounting & Business Advisory Website
 * **Business Purpose:** Professional accounting, taxation, payroll, regulatory compliance, and outsourced finance firm serving clients in India, the UK, the UAE, Europe, Australia, and international markets.
 * **Content Philosophy:** Lead with client outcomes (financial visibility, reduced risk, operational efficiency, sustainable growth) rather than simple lists of tasks or services.
 
 ---
 
 ## 2. Active Brand & Naming Rules
-* **Active Brand:** `PK & Associates`
-* **Rule:** Never mix "PK & Associates" and "PKA Global". Use `PK & Associates` consistently across headers, footers, copy, page titles, meta descriptions, Open Graph tags, and structured data.
-* **Copyright Notice:** `© [Year] PK & Associates. All rights reserved.`
+* **Active Brand:** `PKA Global`
+* **Rule:** Use `PKA Global` consistently across headers, footers, copy, page titles, meta descriptions, Open Graph tags, and structured data.
+* **Copyright Notice:** `© [Year] PKA Global. All rights reserved.`
 
 ---
 

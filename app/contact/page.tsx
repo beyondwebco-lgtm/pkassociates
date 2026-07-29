@@ -56,7 +56,13 @@ export default function ContactPage() {
                     </div>
                     <div>
                       <h3 className="font-semibold text-lg">Office Address</h3>
-                      <p className="text-muted-foreground mt-1">123 Financial District, Business Park<br />New Delhi, India 110001</p>
+                      <p className="text-muted-foreground mt-1">
+                        PKA Global<br />
+                        Unit No. 201, 3-84/22<br />
+                        MS Bright Plaza, Plot No. 22<br />
+                        Puppalguda, Hyderabad<br />
+                        Telangana 500089, India
+                      </p>
                     </div>
                   </div>
                   <div className="flex items-start gap-4">
@@ -74,7 +80,7 @@ export default function ContactPage() {
                     </div>
                     <div>
                       <h3 className="font-semibold text-lg">Email</h3>
-                      <p className="text-muted-foreground mt-1">info@pkassociates.com</p>
+                      <p className="text-muted-foreground mt-1">info@pkaglobal.com</p>
                     </div>
                   </div>
                   <div className="flex items-start gap-4">
@@ -93,7 +99,7 @@ export default function ContactPage() {
               <div className="space-y-6">
                 <div className="w-full h-64 bg-muted rounded-2xl overflow-hidden border">
                   <iframe 
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d224345.83923192776!2d77.06889754725779!3d28.52758200617606!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd5b347eb62d%3A0x52c2b7494e204dce!2sNew%20Delhi%2C%20Delhi!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin" 
+                    src="https://maps.google.com/maps?q=MS+Bright+Plaza,+Plot+No.+22,+Puppalguda,+Hyderabad,+Telangana+500089,+India&t=&z=15&ie=UTF8&iwloc=&output=embed" 
                     width="100%" 
                     height="100%" 
                     style={{ border: 0 }} 

@@ -1,14 +1,14 @@
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Disclaimer | PK & Associates",
-  description: "General disclaimer for website information provided by PK & Associates.",
+  title: "Disclaimer | PKA Global",
+  description: "General disclaimer for website information provided by PKA Global.",
   alternates: {
     canonical: "/disclaimer",
   },
   openGraph: {
-    title: "Disclaimer | PK & Associates",
-    description: "General disclaimer for website information provided by PK & Associates.",
+    title: "Disclaimer | PKA Global",
+    description: "General disclaimer for website information provided by PKA Global.",
     url: "/disclaimer",
   },
 };
@@ -35,14 +35,14 @@ export default function DisclaimerPage() {
           <section>
             <h2 className="text-2xl font-heading font-bold text-primary mb-3">2. Professional Advice Required</h2>
             <p>
-              Tax laws, accounting standards, and statutory regulations vary by jurisdiction and change over time. You should consult a qualified professional at PK & Associates to obtain advice specific to your business circumstances before making any financial or legal decisions.
+              Tax laws, accounting standards, and statutory regulations vary by jurisdiction and change over time. You should consult a qualified professional at PKA Global to obtain advice specific to your business circumstances before making any financial or legal decisions.
             </p>
           </section>
 
           <section>
             <h2 className="text-2xl font-heading font-bold text-primary mb-3">3. Regulatory & Regulatory Changes</h2>
             <p>
-              While we endeavor to keep all information current and accurate, PK & Associates makes no guarantees regarding the completeness, accuracy, or timeliness of statutory rules or third-party regulatory deadlines mentioned on this site.
+              While we endeavor to keep all information current and accurate, PKA Global makes no guarantees regarding the completeness, accuracy, or timeliness of statutory rules or third-party regulatory deadlines mentioned on this site.
             </p>
           </section>
         </div>

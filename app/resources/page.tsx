@@ -1,13 +1,13 @@
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Resources & Insights | PK & Associates",
+  title: "Resources & Insights | PKA Global",
   description: "Explore practical insights on accounting, taxation, payroll, compliance, outsourcing and financial management.",
   alternates: {
     canonical: "/resources",
   },
   openGraph: {
-    title: "Resources & Insights | PK & Associates",
+    title: "Resources & Insights | PKA Global",
     description: "Explore practical insights on accounting, taxation, payroll, compliance, outsourcing and financial management.",
     url: "/resources",
   },

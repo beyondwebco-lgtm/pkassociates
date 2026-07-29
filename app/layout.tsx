@@ -16,8 +16,8 @@ const fontSans = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "PK & Associates | Expert Accounting, Taxation & Advisory",
-  description: "PK & Associates delivers expert accounting, taxation, business compliance, payroll, advisory, and outsourced finance solutions for businesses across India, the UK, and global markets.",
+  title: "PKA Global | Expert Accounting, Taxation & Advisory",
+  description: "PKA Global delivers expert accounting, taxation, business compliance, payroll, advisory, and outsourced finance solutions for businesses across India, the UK, and global markets.",
 };
 
 export default function RootLayout({
@@ -46,10 +46,18 @@ export default function RootLayout({
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "AccountingService",
-              "name": "PK & Associates",
-              "description": "PK & Associates provides end-to-end accounting, bookkeeping, taxation, payroll, compliance, and outsourced finance solutions.",
-              "url": "https://pkassociates.com",
+              "name": "PKA Global",
+              "description": "PKA Global provides end-to-end accounting, bookkeeping, taxation, payroll, compliance, and outsourced finance solutions.",
+              "url": "https://pkaglobal.com",
               "priceRange": "$$",
+              "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "Unit No. 201, 3-84/22, MS Bright Plaza, Plot No. 22",
+                "addressLocality": "Puppalguda",
+                "addressRegion": "Telangana",
+                "postalCode": "500089",
+                "addressCountry": "India"
+              }
             }),
           }}
         />

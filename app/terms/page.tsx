@@ -1,14 +1,14 @@
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Terms and Conditions | PK & Associates",
-  description: "Terms and Conditions governing the use of PK & Associates website and services.",
+  title: "Terms and Conditions | PKA Global",
+  description: "Terms and Conditions governing the use of PKA Global website and services.",
   alternates: {
     canonical: "/terms",
   },
   openGraph: {
-    title: "Terms and Conditions | PK & Associates",
-    description: "Terms and Conditions governing the use of PK & Associates website and services.",
+    title: "Terms and Conditions | PKA Global",
+    description: "Terms and Conditions governing the use of PKA Global website and services.",
     url: "/terms",
   },
 };
@@ -42,14 +42,14 @@ export default function TermsPage() {
           <section>
             <h2 className="text-2xl font-heading font-bold text-primary mb-3">3. Intellectual Property</h2>
             <p>
-              All content, brand names, logos, text, graphics, and layout structures on this website are the property of PK & Associates and protected by applicable copyright and intellectual property laws.
+              All content, brand names, logos, text, graphics, and layout structures on this website are the property of PKA Global and protected by applicable copyright and intellectual property laws.
             </p>
           </section>
 
           <section>
             <h2 className="text-2xl font-heading font-bold text-primary mb-3">4. Limitation of Liability</h2>
             <p>
-              PK & Associates strives to maintain accurate and up-to-date website information, but makes no representations or warranties regarding completeness or timeliness. We shall not be liable for any indirect or consequential damages arising from site access or reliance on website content.
+              PKA Global strives to maintain accurate and up-to-date website information, but makes no representations or warranties regarding completeness or timeliness. We shall not be liable for any indirect or consequential damages arising from site access or reliance on website content.
             </p>
           </section>
         </div>
