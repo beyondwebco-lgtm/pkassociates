@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import Link from "next/link";
-import { ArrowRight, Target, Users, ShieldCheck } from "lucide-react";
+import { ArrowRight, Target, Users, ShieldCheck, Cpu } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 export function AboutPreview() {
@@ -20,11 +20,16 @@ export function AboutPreview() {
             About PK & Associates
           </div>
           <h2 className="text-4xl md:text-5xl font-heading font-bold text-primary leading-tight">
-            A Legacy of Excellence in Global Accounting
+            Your Trusted Accounting & Business Advisory Partner
           </h2>
-          <p className="text-lg text-muted-foreground leading-relaxed">
-            PK & Associates is a premium accounting, taxation, and advisory firm dedicated to empowering businesses worldwide. With over 6 years of specialized UK accounting experience and a strong footprint in India and the Middle East, we are your trusted partners for compliance and strategic growth.
-          </p>
+          <div className="space-y-4">
+            <p className="text-lg text-muted-foreground leading-relaxed">
+              PK & Associates is a professional accounting, taxation and business advisory firm delivering reliable financial solutions for businesses across India and international markets.
+            </p>
+            <p className="text-lg text-muted-foreground leading-relaxed">
+              Our experienced professionals help businesses manage accounting, taxation, payroll, regulatory compliance and financial reporting with accuracy, efficiency and a client-first approach.
+            </p>
+          </div>
           <div className="pt-4">
             <Link href="/about">
               <Button className="h-12 px-8 bg-primary hover:bg-accent text-white text-base font-semibold">
@@ -43,23 +48,28 @@ export function AboutPreview() {
           {[
             {
               icon: Target,
-              title: "Strategic Vision",
-              desc: "Proactive financial planning that anticipates market changes."
+              title: "Client-Focused Solutions",
+              desc: "Services tailored around each client’s operational and financial requirements."
+            },
+            {
+              icon: Cpu,
+              title: "Technology Driven",
+              desc: "Efficient cloud-based workflows supported by modern accounting tools."
             },
             {
               icon: Users,
-              title: "Dedicated Experts",
-              desc: "Offshore professionals highly trained in international standards."
+              title: "Dedicated Professionals",
+              desc: "Experienced professionals providing reliable and responsive accounting support."
             },
             {
               icon: ShieldCheck,
-              title: "100% Compliant",
-              desc: "Strict adherence to HMRC, GST, and local regulatory laws."
+              title: "Quality Assured",
+              desc: "Structured review processes designed to maintain accuracy and consistency."
             }
           ].map((item, i) => (
             <div 
               key={i} 
-              className={`p-6 rounded-3xl bg-white border shadow-sm flex flex-col gap-4 ${i === 2 ? 'sm:col-span-2' : ''}`}
+              className="p-6 rounded-3xl bg-white border shadow-sm flex flex-col gap-4"
             >
               <div className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center">
                 <item.icon className="w-6 h-6 text-primary" />

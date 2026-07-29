@@ -4,13 +4,13 @@ import { motion } from "framer-motion";
 import { PhoneCall, Search, FileSignature, PlayCircle, ClipboardCheck, Users, CheckCircle2 } from "lucide-react";
 
 const steps = [
-  { title: "Discovery Call", icon: <PhoneCall className="w-5 h-5" /> },
-  { title: "Understanding Business", icon: <Search className="w-5 h-5" /> },
-  { title: "Proposal", icon: <FileSignature className="w-5 h-5" /> },
-  { title: "Onboarding", icon: <Users className="w-5 h-5" /> },
-  { title: "Execution", icon: <PlayCircle className="w-5 h-5" /> },
-  { title: "Review", icon: <ClipboardCheck className="w-5 h-5" /> },
-  { title: "Ongoing Support", icon: <CheckCircle2 className="w-5 h-5 text-success" /> },
+  { title: "1. Discovery Call", icon: <PhoneCall className="w-5 h-5" /> },
+  { title: "2. Business Assessment", icon: <Search className="w-5 h-5" /> },
+  { title: "3. Tailored Proposal", icon: <FileSignature className="w-5 h-5" /> },
+  { title: "4. Smooth Onboarding", icon: <Users className="w-5 h-5" /> },
+  { title: "5. Service Delivery", icon: <PlayCircle className="w-5 h-5" /> },
+  { title: "6. Quality Review", icon: <ClipboardCheck className="w-5 h-5" /> },
+  { title: "7. Continuous Support", icon: <CheckCircle2 className="w-5 h-5 text-success" /> },
 ];
 
 export function ProcessSection() {

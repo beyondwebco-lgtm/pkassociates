@@ -4,16 +4,16 @@ import { motion } from "framer-motion";
 import { Utensils, Hotel, ShoppingBag, HeartPulse, HardHat, Factory, Building, ShoppingCart, Landmark } from "lucide-react";
 
 const industries = [
-  { name: "Restaurants", icon: <Utensils className="w-5 h-5" /> },
+  { name: "Restaurants", icon: <Utensils className="w-5 h-5" />, desc: "Restaurant accounting, payroll and GST/VAT support." },
   { name: "Pubs & Bars", icon: <Utensils className="w-5 h-5" /> },
   { name: "Hotels", icon: <Hotel className="w-5 h-5" /> },
-  { name: "Retail", icon: <ShoppingBag className="w-5 h-5" /> },
-  { name: "Healthcare", icon: <HeartPulse className="w-5 h-5" /> },
-  { name: "Construction", icon: <HardHat className="w-5 h-5" /> },
+  { name: "Retail", icon: <ShoppingBag className="w-5 h-5" />, desc: "Inventory, sales reconciliation and tax compliance." },
+  { name: "Healthcare", icon: <HeartPulse className="w-5 h-5" />, desc: "Financial reporting and compliance solutions for healthcare providers." },
+  { name: "Construction", icon: <HardHat className="w-5 h-5" />, desc: "Payroll, CIS/GST compliance and project accounting." },
   { name: "Manufacturing", icon: <Factory className="w-5 h-5" /> },
   { name: "Real Estate", icon: <Building className="w-5 h-5" /> },
-  { name: "E-commerce", icon: <ShoppingCart className="w-5 h-5" /> },
-  { name: "Professional Services", icon: <Landmark className="w-5 h-5" /> },
+  { name: "E-commerce", icon: <ShoppingCart className="w-5 h-5" />, desc: "Marketplace reconciliation and financial reporting." },
+  { name: "Professional Services", icon: <Landmark className="w-5 h-5" />, desc: "Accounting, payroll and advisory solutions." },
 ];
 
 export function IndustriesSection() {
@@ -48,6 +48,9 @@ export function IndustriesSection() {
                 {industry.icon}
               </div>
               <span className="font-medium text-center text-sm">{industry.name}</span>
+              {industry.desc && (
+                <p className="text-xs text-center mt-2 opacity-80">{industry.desc}</p>
+              )}
             </motion.div>
           ))}
         </div>

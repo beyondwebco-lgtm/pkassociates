@@ -4,12 +4,12 @@ import { motion } from "framer-motion";
 import { Globe, MapPin } from "lucide-react";
 
 const regions = [
-  { name: "India", desc: "Headquarters & Primary Services" },
-  { name: "United Kingdom", desc: "Outsourced Accounting" },
-  { name: "UAE & GCC", desc: "VAT & Corporate Tax" },
-  { name: "Europe", desc: "Virtual Finance Office" },
-  { name: "Australia", desc: "BAS Support & Bookkeeping" },
-  { name: "North America", desc: "Tax & Financial Reporting" },
+  { name: "India", desc: "Accounting, Tax & Compliance" },
+  { name: "United Kingdom", desc: "Accounting Outsourcing" },
+  { name: "UAE", desc: "VAT & Corporate Tax" },
+  { name: "Australia", desc: "Bookkeeping & BAS" },
+  { name: "Europe", desc: "Virtual Finance Support" },
+  { name: "North America", desc: "Accounting Advisory" },
 ];
 
 export function GlobalServices() {

@@ -18,7 +18,7 @@ export const indiaServices: CategoryContent = {
     {
       id: "accounting-bookkeeping",
       title: "Accounting & Bookkeeping",
-      description: "Helping businesses maintain accurate financial records and make informed decisions.",
+      description: "We help businesses improve financial visibility, reduce reporting errors and make better decisions through accurate bookkeeping and timely financial reporting.",
       bulletPoints: [
         "Bookkeeping",
         "Accounting",
@@ -31,7 +31,7 @@ export const indiaServices: CategoryContent = {
     {
       id: "taxation",
       title: "Taxation",
-      description: "End-to-end tax compliance and advisory services for individuals and businesses.",
+      description: "Comprehensive tax planning, return preparation and compliance services for individuals and businesses.",
       bulletPoints: [
         "Income Tax Return (ITR) Filing",
         "Corporate Tax Compliance",
@@ -43,7 +43,7 @@ export const indiaServices: CategoryContent = {
     {
       id: "gst",
       title: "GST Services",
-      description: "Comprehensive GST solutions to keep your business fully compliant.",
+      description: "GST registration, return filing, compliance, advisory and notice assistance under one roof.",
       bulletPoints: [
         "GST Registration",
         "GST Return Filing",
@@ -57,7 +57,7 @@ export const indiaServices: CategoryContent = {
     {
       id: "business-registration",
       title: "Business Registration",
-      description: "Start your business with the right legal structure and registrations.",
+      description: "Business registration and regulatory support to establish your business with confidence.",
       bulletPoints: [
         "Private Limited Company Registration",
         "LLP Registration",

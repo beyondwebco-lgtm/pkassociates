@@ -13,7 +13,7 @@ export function SoftwareExpertise() {
             Software Expertise
           </h2>
           <p className="text-muted-foreground text-lg">
-            We are proficient in leading global accounting and payroll software.
+            Experienced Professionals using industry-leading accounting software.
           </p>
         </div>
         

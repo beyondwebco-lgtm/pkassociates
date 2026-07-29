@@ -21,15 +21,19 @@ export function UKOutsourcingPreview() {
             >
               UK Outsourcing Services
             </motion.h2>
-            <motion.p 
+            <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: 0.1 }}
-              className="text-lg text-primary-foreground/80"
             >
-              Dedicated offshore accounting professionals supporting UK accountancy practices and businesses with 100% HMRC compliance.
-            </motion.p>
+              <p className="text-lg text-primary-foreground/80 mb-4">
+                Reliable outsourced accounting support for UK accountancy practices, delivered by experienced professionals using secure cloud-based workflows.
+              </p>
+              <p className="text-lg text-primary-foreground/80">
+                Our flexible outsourcing model helps accountancy practices increase capacity, manage recurring workloads and maintain consistent service quality without expanding internal overheads.
+              </p>
+            </motion.div>
           </div>
           <motion.div
             initial={{ opacity: 0, x: 20 }}

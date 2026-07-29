@@ -2,7 +2,7 @@
 
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
-import { ArrowRight, BarChart3, PieChart, FileText } from "lucide-react";
+import { BarChart3, PieChart, FileText } from "lucide-react";
 import Link from "next/link";
 import { AboutPreview } from "@/components/about-preview";
 import { WhyChooseUs } from "@/components/why-choose-us";
@@ -41,21 +41,24 @@ export default function Home() {
             transition={{ duration: 0.8, ease: "easeOut" }}
             className="flex flex-col gap-6"
           >
-            <h1 className="text-5xl lg:text-7xl font-bold font-heading leading-tight tracking-tight text-primary">
-              Helping Businesses Stay Compliant, <span className="text-accent">Grow Confidently.</span>
+            <div className="inline-block bg-accent/20 text-accent px-4 py-1.5 rounded-full font-semibold text-sm w-fit">
+              Simplifying Accounting. Strengthening Businesses. Driving Growth.
+            </div>
+            <h1 className="text-5xl lg:text-7xl font-bold font-heading leading-tight tracking-tight text-primary mt-4">
+              Accounting, Tax & Business Compliance Solutions for <span className="text-accent">Growing Businesses</span>
             </h1>
             <p className="text-lg text-muted-foreground max-w-xl leading-relaxed">
-              PK & Associates delivers expert accounting, taxation, business compliance, payroll, advisory, and outsourced finance solutions for businesses across India, the UK, and global markets.
+              PK & Associates provides end-to-end accounting, bookkeeping, taxation, payroll, compliance, and outsourced finance solutions that help businesses stay compliant, improve financial visibility, and focus on sustainable growth.
             </p>
             <div className="flex flex-wrap gap-4 pt-4">
               <Link href="/contact">
-                <Button size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90 h-14 px-8 text-base">
-                  Book Consultation
+                <Button size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90 h-14 px-8 text-base font-semibold">
+                  Get Free Consultation
                 </Button>
               </Link>
-              <Link href="/services">
+              <Link href="/contact">
                 <Button size="lg" variant="outline" className="h-14 px-8 text-base border-primary/20 hover:bg-primary/5">
-                  Explore Services <ArrowRight className="ml-2 h-4 w-4" />
+                  Request Proposal
                 </Button>
               </Link>
             </div>

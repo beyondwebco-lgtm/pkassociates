@@ -11,11 +11,10 @@ const navLinks = [
   { name: "Home", href: "/" },
   { name: "About", href: "/about" },
   { name: "Services", href: "/services" },
-  { name: "Industries", href: "/industries" },
   { name: "UK Outsourcing", href: "/uk-outsourcing" },
-  { name: "Global Services", href: "/global-services" },
-  { name: "Why Choose Us", href: "/about" },
-  { name: "Contact", href: "/contact" },
+  { name: "Global Solutions", href: "/global-services" },
+  { name: "Industries", href: "/industries" },
+  { name: "Resources", href: "/resources" },
 ];
 
 export function Navbar() {
@@ -71,7 +70,7 @@ export function Navbar() {
         <div className="flex items-center gap-4">
           <Link href="/contact" className="hidden md:block">
             <Button className="bg-primary text-primary-foreground hover:bg-primary/90 font-semibold h-11 px-6">
-              Book Consultation <ArrowRight className="w-4 h-4 ml-2" />
+              Contact <ArrowRight className="w-4 h-4 ml-2" />
             </Button>
           </Link>
 
@@ -102,7 +101,7 @@ export function Navbar() {
                 </nav>
                 <Link href="/contact" className="w-full">
                   <Button className="w-full bg-primary hover:bg-accent text-white h-12 text-base">
-                    Book Consultation
+                    Contact
                   </Button>
                 </Link>
               </div>
