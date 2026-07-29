@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { indiaServices, ukOutsourcing, industries, globalServices } from "@/data/content";
+import { indiaServices, ukOutsourcing, globalServices } from "@/data/content";
 
 export function Footer() {
   return (
@@ -27,25 +27,21 @@ export function Footer() {
           </div>
         </div>
 
-        {/* Quick Links & Industries */}
+        {/* Company Links */}
         <div>
-          <h3 className="font-heading font-bold text-primary mb-6">Quick Links</h3>
+          <h3 className="font-heading font-bold text-primary mb-6">Company</h3>
           <ul className="space-y-3 mb-8">
             <li><Link href="/" className="text-sm text-muted-foreground hover:text-accent transition-colors">Home</Link></li>
             <li><Link href="/about" className="text-sm text-muted-foreground hover:text-accent transition-colors">About Us</Link></li>
+            <li><Link href="/services/business-advisory" className="text-sm text-muted-foreground hover:text-accent transition-colors">Business Advisory</Link></li>
+            <li><Link href="/careers" className="text-sm text-muted-foreground hover:text-accent transition-colors">Careers</Link></li>
             <li><Link href="/contact" className="text-sm text-muted-foreground hover:text-accent transition-colors">Contact</Link></li>
           </ul>
 
-          <h3 className="font-heading font-bold text-primary mb-6">Industries</h3>
+          <h3 className="font-heading font-bold text-primary mb-6">Resources</h3>
           <ul className="space-y-3">
-            {industries.slice(0, 6).map(industry => (
-              <li key={industry.id}>
-                <Link href={`/industries/${industry.id}`} className="text-sm text-muted-foreground hover:text-accent transition-colors">
-                  {industry.name}
-                </Link>
-              </li>
-            ))}
-            <li><Link href="/industries" className="text-sm text-accent font-semibold hover:underline">View All Industries &rarr;</Link></li>
+            <li><Link href="/resources" className="text-sm text-muted-foreground hover:text-accent transition-colors">Resources & Insights</Link></li>
+            <li><Link href="/resources" className="text-sm text-muted-foreground hover:text-accent transition-colors">Blog</Link></li>
           </ul>
         </div>
 
@@ -100,10 +96,10 @@ export function Footer() {
         <div>
           &copy; {new Date().getFullYear()} PK & Associates. All rights reserved.
         </div>
-        <div className="flex items-center gap-6">
-          <Link href="#" className="hover:text-primary transition-colors">Privacy Policy</Link>
-          <Link href="#" className="hover:text-primary transition-colors">Terms & Conditions</Link>
-          <Link href="#" className="hover:text-primary transition-colors">Sitemap</Link>
+        <div className="flex flex-wrap items-center gap-6">
+          <Link href="/privacy-policy" className="hover:text-primary transition-colors">Privacy Policy</Link>
+          <Link href="/terms" className="hover:text-primary transition-colors">Terms & Conditions</Link>
+          <Link href="/disclaimer" className="hover:text-primary transition-colors">Disclaimer</Link>
         </div>
       </div>
     </footer>

@@ -13,9 +13,9 @@ export function FinalCTA() {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="text-4xl md:text-6xl font-heading font-bold mb-6"
+          className="text-4xl md:text-6xl font-heading font-bold mb-6 text-white"
         >
-          Ready to Streamline Your Business?
+          Ready to Simplify Your Accounting & Compliance?
         </motion.h2>
         <motion.p 
           initial={{ opacity: 0, y: 20 }}
@@ -24,7 +24,7 @@ export function FinalCTA() {
           transition={{ delay: 0.1 }}
           className="text-lg md:text-xl text-primary-foreground/80 mb-10 max-w-2xl mx-auto"
         >
-          Get in touch with our experts today to discuss how PK & Associates can support your accounting, tax, and compliance needs.
+          Speak with our experts to discover how PK & Associates can streamline your accounting, taxation, payroll and compliance requirements.
         </motion.p>
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -34,13 +34,13 @@ export function FinalCTA() {
           className="flex flex-col sm:flex-row gap-4 justify-center"
         >
           <Link href="/contact">
-            <Button size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90 h-14 px-10 text-lg w-full sm:w-auto">
-              Book a Free Consultation
+            <Button size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90 h-14 px-10 text-lg w-full sm:w-auto font-semibold">
+              Book Free Consultation
             </Button>
           </Link>
-          <Link href="/services">
-            <Button size="lg" variant="outline" className="border-white/20 hover:bg-white/10 h-14 px-10 text-lg w-full sm:w-auto">
-              Explore Our Services
+          <Link href="/contact">
+            <Button size="lg" variant="outline" className="border-white/20 hover:bg-white/10 text-white h-14 px-10 text-lg w-full sm:w-auto font-semibold">
+              Request Proposal
             </Button>
           </Link>
         </motion.div>

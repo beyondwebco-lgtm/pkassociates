@@ -38,6 +38,21 @@ export default function RootLayout({
           </main>
           <Footer />
         </SmoothScroll>
+
+        {/* AccountingService / Organization Structured Data */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "AccountingService",
+              "name": "PK & Associates",
+              "description": "PK & Associates provides end-to-end accounting, bookkeeping, taxation, payroll, compliance, and outsourced finance solutions.",
+              "url": "https://pkassociates.com",
+              "priceRange": "$$",
+            }),
+          }}
+        />
       </body>
     </html>
   );

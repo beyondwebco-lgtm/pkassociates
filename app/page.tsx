@@ -12,7 +12,6 @@ import { IndustriesSection } from "@/components/industries-section";
 import { GlobalServices } from "@/components/global-services";
 import { SoftwareExpertise } from "@/components/software-expertise";
 import { ProcessSection } from "@/components/process-section";
-import { TestimonialsSection } from "@/components/testimonials-section";
 import { FAQSection } from "@/components/faq-section";
 import { FinalCTA } from "@/components/final-cta";
 
@@ -135,7 +134,6 @@ export default function Home() {
       <GlobalServices />
       <SoftwareExpertise />
       <ProcessSection />
-      <TestimonialsSection />
       <FAQSection />
       <FinalCTA />
     </div>

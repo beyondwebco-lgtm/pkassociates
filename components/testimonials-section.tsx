@@ -45,7 +45,7 @@ export function TestimonialsSection() {
                 ))}
               </div>
               <p className="text-muted-foreground text-lg italic leading-relaxed flex-grow">
-                "{testimonial.text}"
+                &quot;{testimonial.text}&quot;
               </p>
               <div>
                 <h4 className="font-bold text-foreground font-heading">{testimonial.author}</h4>

@@ -9,20 +9,24 @@ import {
 
 const faqs = [
   {
-    question: "Do you offer outsourced accounting for UK firms?",
-    answer: "Yes, we specialize in providing outsourced bookkeeping, VAT, payroll, and year-end accounts support for UK accountancy practices using software like Xero, QuickBooks, and FreeAgent.",
+    question: "How quickly can you onboard new clients?",
+    answer: "Onboarding timelines depend on the service scope, systems involved and availability of the required records. After the initial consultation, our team provides a clear onboarding plan and expected timeline.",
   },
   {
-    question: "What industries do you specialize in?",
-    answer: "We support a wide range of industries including Restaurants, Pubs & Bars, Hotels, Retail, Healthcare, Construction, E-commerce, and more.",
+    question: "Which accounting software do you support?",
+    answer: "Our professionals work with widely used cloud accounting and finance platforms. The exact software supported depends on the service requirement and client workflow.",
   },
   {
-    question: "Can you help with business registration in India?",
-    answer: "Absolutely. We assist with Private Limited, LLP, Partnership, and Proprietorship registrations, along with required licenses like PAN, TAN, GST, and MSME.",
+    question: "Do you sign Non-Disclosure Agreements?",
+    answer: "NDA requirements can be discussed during the consultation and included in the engagement terms where mutually agreed.",
   },
   {
-    question: "How secure is our financial data?",
-    answer: "Data security is our top priority. We use secure, cloud-based systems and enforce strict confidentiality protocols to ensure your financial information is always protected.",
+    question: "How is our financial information protected?",
+    answer: "We use controlled access, secure communication channels, documented workflows and confidentiality practices designed to protect client information.",
+  },
+  {
+    question: "Can services be customized?",
+    answer: "Yes. Service scope, reporting frequency, resource requirements and engagement models can be tailored based on the client’s operational needs.",
   },
 ];
 
@@ -51,6 +55,25 @@ export function FAQSection() {
             </AccordionItem>
           ))}
         </Accordion>
+
+        {/* FAQPage Structured Data (JSON-LD) */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "FAQPage",
+              "mainEntity": faqs.map((faq) => ({
+                "@type": "Question",
+                "name": faq.question,
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": faq.answer,
+                },
+              })),
+            }),
+          }}
+        />
       </div>
     </section>
   );

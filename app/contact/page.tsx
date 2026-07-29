@@ -23,7 +23,7 @@ export default function ContactPage() {
             transition={{ delay: 0.1 }}
             className="text-4xl md:text-6xl font-heading font-bold mb-6"
           >
-            Let's Discuss Your Business Needs
+            Let&apos;s Discuss Your Business Needs
           </motion.h1>
           <motion.p 
             initial={{ opacity: 0, y: 20 }}
