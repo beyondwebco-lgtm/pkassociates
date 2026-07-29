@@ -237,6 +237,20 @@ This document records the chronological history of updates, content restructurin
   * Updated display email address in [`app/contact/page.tsx`](file:///c:/Users/Arun/Documents/GitHub/pkassociates/app/contact/page.tsx#L85) to `hello@pkaglobal.co`.
 * **Build / Lint Result:** `npm run lint` PASSED (0 errors, 0 warnings), `npm run build` PASSED (54 static pages generated in ~594ms).
 
+---
+
+## [July 29, 2026] - Phase 11: Contact Mobile Number & WhatsApp Link Update
+* **Prompt Summary:** Updated primary public contact phone number to `+91 93928 70209`, form input placeholder, and added a direct `wa.me` WhatsApp chat link on the Contact page.
+* **Files Modified:**
+  * [`app/contact/page.tsx`](file:///c:/Users/Arun/Documents/GitHub/pkassociates/app/contact/page.tsx)
+  * [`HISTORY.md`](file:///c:/Users/Arun/Documents/GitHub/pkassociates/HISTORY.md)
+* **Key Implementation Details:**
+  * Updated display contact phone number to `+91 93928 70209` in [`app/contact/page.tsx`](file:///c:/Users/Arun/Documents/GitHub/pkassociates/app/contact/page.tsx#L76).
+  * Wrapped WhatsApp CTA button with direct link to `https://wa.me/919392870209`.
+  * Updated phone input form placeholder to `+91 93928 70209`.
+* **Build / Lint Result:** `npm run lint` PASSED (0 errors, 0 warnings), `npm run build` PASSED (54 static pages generated in ~616ms).
+
+
 
 
 
