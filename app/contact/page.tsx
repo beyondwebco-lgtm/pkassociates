@@ -73,7 +73,7 @@ export default function ContactPage() {
                     </div>
                     <div>
                       <h3 className="font-semibold text-lg">Phone</h3>
-                      <p className="text-muted-foreground mt-1">+91 98765 43210</p>
+                      <p className="text-muted-foreground mt-1">+91 93928 70209</p>
                     </div>
                   </div>
                   <div className="flex items-start gap-4">
@@ -110,9 +110,11 @@ export default function ContactPage() {
                     referrerPolicy="no-referrer-when-downgrade"
                   ></iframe>
                 </div>
-                <Button className="w-full h-14 bg-[#25D366] hover:bg-[#128C7E] text-white text-lg">
-                  <MessageCircle className="w-5 h-5 ml-2 mr-2" /> Chat with us on WhatsApp
-                </Button>
+                <a href="https://wa.me/919392870209" target="_blank" rel="noopener noreferrer" className="block w-full">
+                  <Button className="w-full h-14 bg-[#25D366] hover:bg-[#128C7E] text-white text-lg">
+                    <MessageCircle className="w-5 h-5 ml-2 mr-2" /> Chat with us on WhatsApp
+                  </Button>
+                </a>
               </div>
             </motion.div>
 
@@ -163,7 +165,7 @@ export default function ContactPage() {
                   <input 
                     type="tel" 
                     className="w-full h-12 px-4 rounded-xl border border-input bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-ring" 
-                    placeholder="+91 98765 43210"
+                    placeholder="+91 93928 70209"
                   />
                 </div>
                 <div className="space-y-2">
