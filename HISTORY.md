@@ -111,3 +111,38 @@ This document records the chronological history of updates, content restructurin
 * **Request Proposal Styling Updates:**
   * Enhanced "Request Proposal" buttons with exact theme color token reuse, clear default, hover (`hover:bg-secondary hover:border-primary/50`), focus-visible (`ring-2 ring-ring ring-offset-2`), active (`active:scale-[0.98]`), and disabled states.
 * **Build / Lint Result:** `npm run lint` PASSED (0 errors, 0 warnings), `npm run build` PASSED (54 static pages generated in ~465ms).
+
+---
+
+## [July 29, 2026] - Phase 6: Component-Level Overflow Verification & Final Responsive Audit
+* **Prompt Summary:** Perform a component-level overflow inspection without global `overflow-x: hidden` to ensure no layout problems were masked, restore sticky element behavior, verify mobile drawers/portals, and audit across 8 viewports.
+* **Files Modified:**
+  * [`app/globals.css`](file:///c:/Users/Arun/Documents/GitHub/pkassociates/app/globals.css)
+  * [`app/layout.tsx`](file:///c:/Users/Arun/Documents/GitHub/pkassociates/app/layout.tsx)
+  * [`components/navbar.tsx`](file:///c:/Users/Arun/Documents/GitHub/pkassociates/components/navbar.tsx)
+  * [`components/about-preview.tsx`](file:///c:/Users/Arun/Documents/GitHub/pkassociates/components/about-preview.tsx)
+  * [`components/services-overview.tsx`](file:///c:/Users/Arun/Documents/GitHub/pkassociates/components/services-overview.tsx)
+  * [`components/industries-section.tsx`](file:///c:/Users/Arun/Documents/GitHub/pkassociates/components/industries-section.tsx)
+  * [`components/why-choose-us.tsx`](file:///c:/Users/Arun/Documents/GitHub/pkassociates/components/why-choose-us.tsx)
+  * [`components/process-section.tsx`](file:///c:/Users/Arun/Documents/GitHub/pkassociates/components/process-section.tsx)
+  * [`components/service-layout.tsx`](file:///c:/Users/Arun/Documents/GitHub/pkassociates/components/service-layout.tsx)
+  * [`components/footer.tsx`](file:///c:/Users/Arun/Documents/GitHub/pkassociates/components/footer.tsx)
+  * [`app/contact/page.tsx`](file:///c:/Users/Arun/Documents/GitHub/pkassociates/app/contact/page.tsx)
+  * [`app/about/page.tsx`](file:///c:/Users/Arun/Documents/GitHub/pkassociates/app/about/page.tsx)
+  * [`app/services/page.tsx`](file:///c:/Users/Arun/Documents/GitHub/pkassociates/app/services/page.tsx)
+  * [`app/uk-outsourcing/page.tsx`](file:///c:/Users/Arun/Documents/GitHub/pkassociates/app/uk-outsourcing/page.tsx)
+  * [`app/global-services/page.tsx`](file:///c:/Users/Arun/Documents/GitHub/pkassociates/app/global-services/page.tsx)
+  * [`app/industries/page.tsx`](file:///c:/Users/Arun/Documents/GitHub/pkassociates/app/industries/page.tsx)
+  * [`app/resources/page.tsx`](file:///c:/Users/Arun/Documents/GitHub/pkassociates/app/resources/page.tsx)
+  * [`app/careers/page.tsx`](file:///c:/Users/Arun/Documents/GitHub/pkassociates/app/careers/page.tsx)
+  * [`app/privacy-policy/page.tsx`](file:///c:/Users/Arun/Documents/GitHub/pkassociates/app/privacy-policy/page.tsx)
+  * [`app/terms/page.tsx`](file:///c:/Users/Arun/Documents/GitHub/pkassociates/app/terms/page.tsx)
+  * [`app/disclaimer/page.tsx`](file:///c:/Users/Arun/Documents/GitHub/pkassociates/app/disclaimer/page.tsx)
+  * [`HISTORY.md`](file:///c:/Users/Arun/Documents/GitHub/pkassociates/HISTORY.md)
+* **Component-Level Overflow Fixes:**
+  * **Removed Global `overflow-x: hidden`:** Removed global `overflow-x: hidden` from `html`, `body`, and `<main>` so sticky elements (like the sidebar in `service-layout.tsx`) work cleanly without parent container scroll locks.
+  * **Component-Level Scoping:** Applied scoped `relative overflow-hidden` directly on individual section components (`ServicesOverview`, `IndustriesSection`, `WhyChooseUs`, `ProcessSection`, `ContactPage`, `AboutPage`, `ServicesPage`, `UKOutsourcingPage`, `GlobalServicesPage`, `IndustriesPage`) to isolate Framer Motion entrance transforms (`x: -30`, `x: 20`) without masking global layout problems.
+  * **Drawer & Shadow Unclipping:** Verified mobile navigation drawer (`SheetContent`) and card elevation shadows remain unclipped.
+  * **Touch Target Verification:** Updated mobile drawer trigger button and footer social link buttons to `min-h-[44px] min-w-[44px]` for clean mobile touch interaction.
+* **Build / Lint Result:** `npm run lint` PASSED (0 errors, 0 warnings), `npm run build` PASSED (54 static pages generated in ~515ms).
+

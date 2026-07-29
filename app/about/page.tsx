@@ -29,7 +29,7 @@ export default function AboutPage() {
       </section>
 
       {/* Intro */}
-      <section className="py-24 bg-background">
+      <section className="py-24 bg-background relative overflow-hidden">
         <div className="container mx-auto px-4 grid md:grid-cols-2 gap-10 md:gap-16 items-center">
           <motion.div
             initial={{ opacity: 0, x: -30 }}

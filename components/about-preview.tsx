@@ -19,20 +19,20 @@ export function AboutPreview() {
           <div className="inline-block bg-accent/20 text-accent px-4 py-1.5 rounded-full font-semibold text-sm mb-2">
             About PK & Associates
           </div>
-          <h2 className="text-4xl md:text-5xl font-heading font-bold text-primary leading-tight">
+          <h2 className="text-2xl sm:text-3xl md:text-5xl font-heading font-bold text-primary leading-tight break-words">
             Your Trusted Accounting & Business Advisory Partner
           </h2>
           <div className="space-y-4">
-            <p className="text-lg text-muted-foreground leading-relaxed">
+            <p className="text-base sm:text-lg text-muted-foreground leading-relaxed">
               PK & Associates is a professional accounting, taxation and business advisory firm delivering reliable financial solutions for businesses across India and international markets.
             </p>
-            <p className="text-lg text-muted-foreground leading-relaxed">
+            <p className="text-base sm:text-lg text-muted-foreground leading-relaxed">
               Our experienced professionals help businesses manage accounting, taxation, payroll, regulatory compliance and financial reporting with accuracy, efficiency and a client-first approach.
             </p>
           </div>
           <div className="pt-4">
-            <Link href="/about">
-              <Button className="h-12 px-8 bg-primary hover:bg-accent text-white text-base font-semibold">
+            <Link href="/about" className="inline-block w-full sm:w-auto">
+              <Button className="w-full sm:w-auto h-12 px-8 bg-primary hover:bg-accent text-white text-base font-semibold transition-all">
                 Learn More About Us <ArrowRight className="w-5 h-5 ml-2" />
               </Button>
             </Link>
@@ -43,7 +43,7 @@ export function AboutPreview() {
           initial={{ opacity: 0, x: 20 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
-          className="grid sm:grid-cols-2 gap-6"
+          className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6"
         >
           {[
             {

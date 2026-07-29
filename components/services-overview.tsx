@@ -8,7 +8,7 @@ import { indiaServices } from "@/data/content";
 
 export function ServicesOverview() {
   return (
-    <section className="py-24 bg-background">
+    <section className="py-24 bg-background relative overflow-hidden">
       <div className="container mx-auto px-4 max-w-7xl">
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 sm:mb-16 gap-6">
           <div className="max-w-2xl">
