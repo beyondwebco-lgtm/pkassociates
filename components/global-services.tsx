@@ -20,17 +20,17 @@ export function GlobalServices() {
         <Globe className="w-[800px] h-[800px] text-white" />
       </div>
 
-      <div className="container mx-auto px-4 relative z-10">
+      <div className="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center max-w-2xl mx-auto mb-16">
-          <h2 className="text-3xl md:text-5xl font-heading font-bold text-white mb-4">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-white mb-4 break-words">
             Global Reach, Local Expertise
           </h2>
-          <p className="text-primary-foreground/80 text-lg">
+          <p className="text-primary-foreground/80 text-base sm:text-lg">
             Supporting businesses across continents with localized compliance and international standards.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
           {regions.map((region, index) => (
             <motion.div
               key={index}

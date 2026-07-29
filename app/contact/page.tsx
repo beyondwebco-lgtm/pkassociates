@@ -9,35 +9,37 @@ export default function ContactPage() {
     <div className="flex flex-col min-h-screen pt-16 bg-background">
       <section className="bg-primary text-primary-foreground py-24 relative overflow-hidden">
         <div className="absolute inset-0 opacity-10 bg-[radial-gradient(ellipse_at_center,rgba(255,255,255,0.2)_0%,transparent_70%)]" />
-        <div className="container mx-auto px-4 relative z-10 text-center max-w-3xl">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            className="inline-block bg-accent/20 text-accent px-4 py-1.5 rounded-full font-semibold text-sm mb-6"
-          >
-            Get In Touch
-          </motion.div>
-          <motion.h1 
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.1 }}
-            className="text-3xl sm:text-4xl md:text-6xl font-heading font-bold mb-6 break-words"
-          >
-            Let&apos;s Discuss Your Business Needs
-          </motion.h1>
-          <motion.p 
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.2 }}
-            className="text-lg text-primary-foreground/80"
-          >
-            Ready to streamline your accounting and ensure compliance? Contact our experts today for a free consultation.
-          </motion.p>
+        <div className="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+          <div className="max-w-3xl mx-auto">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              className="inline-block bg-accent/20 text-accent px-4 py-1.5 rounded-full font-semibold text-sm mb-6"
+            >
+              Get In Touch
+            </motion.div>
+            <motion.h1 
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.1 }}
+              className="text-3xl sm:text-4xl md:text-6xl font-heading font-bold mb-6 break-words"
+            >
+              Let&apos;s Discuss Your Business Needs
+            </motion.h1>
+            <motion.p 
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.2 }}
+              className="text-lg text-primary-foreground/80"
+            >
+              Ready to streamline your accounting and ensure compliance? Contact our experts today for a free consultation.
+            </motion.p>
+          </div>
         </div>
       </section>
 
       <section className="py-24 relative overflow-hidden">
-        <div className="container mx-auto px-4 max-w-7xl">
+        <div className="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-16 items-start">
             
             {/* Contact Information & Map */}

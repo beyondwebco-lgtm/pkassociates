@@ -9,14 +9,14 @@ import { indiaServices } from "@/data/content";
 export function ServicesOverview() {
   return (
     <section className="py-24 bg-background relative overflow-hidden">
-      <div className="container mx-auto px-4 max-w-7xl">
+      <div className="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 sm:mb-16 gap-6">
           <div className="max-w-2xl">
             <motion.h2 
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              className="text-2xl sm:text-3xl md:text-5xl font-heading font-bold text-primary mb-4 sm:mb-6 break-words"
+              className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-primary mb-4 sm:mb-6 break-words"
             >
               India Services
             </motion.h2>
@@ -44,7 +44,7 @@ export function ServicesOverview() {
           </motion.div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
           {indiaServices.services.slice(0, 6).map((service, index) => (
             <motion.div
               key={service.id}

@@ -7,17 +7,17 @@ import { CheckCircle2 } from "lucide-react";
 export function SoftwareExpertise() {
   return (
     <section className="py-24 bg-secondary/20">
-      <div className="container mx-auto px-4 max-w-5xl">
+      <div className="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-5xl font-heading font-bold text-primary mb-4">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-primary mb-4 break-words">
             Software Expertise
           </h2>
-          <p className="text-muted-foreground text-lg">
+          <p className="text-muted-foreground text-base sm:text-lg">
             Experienced Professionals using industry-leading accounting software.
           </p>
         </div>
         
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 sm:gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
           {softwareExpertise.map((software, index) => (
             <motion.div
               key={index}

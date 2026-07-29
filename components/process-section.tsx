@@ -16,9 +16,9 @@ const steps = [
 export function ProcessSection() {
   return (
     <section className="py-24 bg-secondary/20 relative overflow-hidden">
-      <div className="container mx-auto px-4">
+      <div className="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-2xl mx-auto mb-16">
-          <h2 className="text-2xl sm:text-3xl md:text-5xl font-heading font-bold text-primary mb-4 break-words">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-primary mb-4 break-words">
             How We Work
           </h2>
           <p className="text-base sm:text-lg text-muted-foreground">
@@ -26,11 +26,8 @@ export function ProcessSection() {
           </p>
         </div>
 
-        <div className="relative max-w-4xl mx-auto">
-          {/* Connecting Line */}
-          <div className="absolute top-1/2 left-0 w-full h-1 bg-gradient-to-r from-primary/10 via-accent to-primary/10 -translate-y-1/2 hidden lg:block" />
-          
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-7 gap-6 lg:gap-2 relative z-10">
+        <div className="relative">
+          <div className="flex flex-wrap justify-center gap-6 sm:gap-8 relative z-10">
             {steps.map((step, index) => (
               <motion.div
                 key={index}
@@ -38,12 +35,12 @@ export function ProcessSection() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.4, delay: index * 0.1 }}
-                className="flex flex-col items-center text-center gap-4 group"
+                className="w-full sm:w-[calc(50%-1rem)] lg:w-[calc(25%-1.5rem)] flex flex-col items-center text-center p-6 bg-white rounded-2xl border shadow-sm hover:shadow-md hover:border-accent/40 transition-all duration-300 gap-4 group"
               >
-                <div className="w-14 h-14 rounded-full bg-white border-2 border-primary/10 shadow-md flex items-center justify-center text-primary group-hover:border-accent group-hover:text-accent transition-all duration-300">
+                <div className="w-14 h-14 rounded-full bg-primary/10 border-2 border-primary/10 shadow-sm flex items-center justify-center text-primary group-hover:bg-accent/20 group-hover:border-accent group-hover:text-accent transition-all duration-300">
                   {step.icon}
                 </div>
-                <span className="font-heading font-semibold text-sm px-2 text-foreground/80 group-hover:text-primary transition-colors">
+                <span className="font-heading font-semibold text-base px-2 text-foreground/90 group-hover:text-primary transition-colors">
                   {step.title}
                 </span>
               </motion.div>

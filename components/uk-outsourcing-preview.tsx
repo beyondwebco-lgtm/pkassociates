@@ -10,14 +10,14 @@ export function UKOutsourcingPreview() {
   return (
     <section className="py-24 bg-primary text-primary-foreground relative overflow-hidden">
       <div className="absolute inset-0 opacity-5 bg-[radial-gradient(ellipse_at_center,rgba(255,255,255,0.4)_0%,transparent_70%)]" />
-      <div className="container mx-auto px-4 max-w-7xl relative z-10">
+      <div className="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 sm:mb-16 gap-6">
           <div className="max-w-2xl">
             <motion.h2 
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              className="text-2xl sm:text-3xl md:text-5xl font-heading font-bold mb-4 sm:mb-6 text-white break-words"
+              className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-heading font-bold mb-4 sm:mb-6 text-white break-words"
             >
               UK Outsourcing Services
             </motion.h2>
@@ -49,7 +49,7 @@ export function UKOutsourcingPreview() {
           </motion.div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
           {ukOutsourcing.services.slice(0, 6).map((service, index) => (
             <motion.div
               key={service.id}

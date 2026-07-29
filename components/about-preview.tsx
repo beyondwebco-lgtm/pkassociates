@@ -9,7 +9,7 @@ export function AboutPreview() {
   return (
     <section className="py-24 bg-background overflow-hidden relative">
       <div className="absolute top-0 right-0 w-1/3 h-full bg-primary/5 rounded-l-full blur-3xl -z-10" />
-      <div className="container mx-auto px-4 grid lg:grid-cols-2 gap-16 items-center">
+      <div className="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
         <motion.div 
           initial={{ opacity: 0, x: -20 }}
           whileInView={{ opacity: 1, x: 0 }}
@@ -19,7 +19,7 @@ export function AboutPreview() {
           <div className="inline-block bg-accent/20 text-accent px-4 py-1.5 rounded-full font-semibold text-sm mb-2">
             About PKA Global
           </div>
-          <h2 className="text-2xl sm:text-3xl md:text-5xl font-heading font-bold text-primary leading-tight break-words">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-primary leading-tight break-words">
             Your Trusted Accounting & Business Advisory Partner
           </h2>
           <div className="space-y-4">

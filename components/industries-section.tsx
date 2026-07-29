@@ -19,10 +19,10 @@ const industries = [
 export function IndustriesSection() {
   return (
     <section className="py-24 bg-background relative overflow-hidden">
-      <div className="container mx-auto px-4">
+      <div className="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 sm:mb-16 gap-6">
           <div className="max-w-2xl">
-            <h2 className="text-2xl sm:text-3xl md:text-5xl font-heading font-bold text-primary mb-4 break-words">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-primary mb-4 break-words">
               Specialized Industry Knowledge
             </h2>
             <p className="text-base sm:text-lg text-muted-foreground">
@@ -34,7 +34,7 @@ export function IndustriesSection() {
           </button>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 sm:gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
           {industries.map((industry, index) => (
             <motion.div
               key={index}

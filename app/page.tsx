@@ -32,7 +32,7 @@ export default function Home() {
           className="absolute bottom-1/4 right-1/4 w-[30rem] h-[30rem] bg-primary/10 rounded-full blur-3xl"
         />
 
-        <div className="mx-auto flex w-full max-w-5xl flex-col items-center px-4 text-center sm:px-6 lg:px-8 relative z-10">
+        <div className="mx-auto flex w-full max-w-7xl flex-col items-center px-4 sm:px-6 lg:px-8 relative z-10">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -42,7 +42,7 @@ export default function Home() {
             <div className="inline-block bg-accent/20 text-accent px-3.5 sm:px-4 py-1.5 rounded-2xl sm:rounded-full font-semibold text-xs sm:text-sm max-w-full text-balance mb-6">
               Simplifying Accounting. Strengthening Businesses. Driving Growth.
             </div>
-            <h1 className="mx-auto max-w-4xl text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold font-heading leading-tight tracking-tight text-primary mb-6 break-words">
+            <h1 className="mx-auto max-w-4xl text-2xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold font-heading leading-tight tracking-tight text-primary mb-6 break-words">
               Accounting, Tax & Business Compliance Solutions for <span className="text-accent">Growing Businesses</span>
             </h1>
             <p className="mx-auto max-w-2xl text-base sm:text-lg md:text-xl text-muted-foreground leading-relaxed mb-8">

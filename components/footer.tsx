@@ -4,7 +4,7 @@ import { indiaServices, ukOutsourcing, globalServices } from "@/data/content";
 export function Footer() {
   return (
     <footer className="w-full bg-secondary text-foreground pt-20 pb-10">
-      <div className="container mx-auto px-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 sm:gap-12 border-b border-border/50 pb-12 sm:pb-16">
+      <div className="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 sm:gap-12 border-b border-border/50 pb-12 sm:pb-16">
         
         {/* Brand & Socials */}
         <div className="lg:col-span-1">
@@ -92,7 +92,7 @@ export function Footer() {
 
       </div>
 
-      <div className="container mx-auto px-4 mt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-center sm:text-left text-sm text-muted-foreground">
+      <div className="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8 mt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-center sm:text-left text-sm text-muted-foreground">
         <div>
           &copy; {new Date().getFullYear()} PKA Global. All rights reserved.
         </div>

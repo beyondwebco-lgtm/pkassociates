@@ -25,7 +25,7 @@ const categories = [
 export default function ResourcesPage() {
   return (
     <div className="flex flex-col min-h-screen pt-28 pb-20">
-      <div className="container mx-auto px-4 max-w-5xl">
+      <div className="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
         <h1 className="text-3xl sm:text-4xl md:text-6xl font-heading font-bold text-primary mb-6 break-words">
           Accounting, Tax and Business Insights
         </h1>
@@ -35,7 +35,7 @@ export default function ResourcesPage() {
 
         <div className="mb-12">
           <h2 className="text-2xl font-heading font-bold text-primary mb-6">Topic Categories</h2>
-          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-3 sm:gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
             {categories.map((cat, idx) => (
               <div
                 key={idx}

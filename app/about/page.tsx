@@ -9,28 +9,30 @@ export default function AboutPage() {
       {/* Header */}
       <section className="bg-primary text-primary-foreground py-20 relative overflow-hidden">
         <div className="absolute inset-0 opacity-10 bg-[radial-gradient(ellipse_at_center,rgba(255,255,255,0.2)_0%,transparent_70%)]" />
-        <div className="container mx-auto px-4 relative z-10 text-center max-w-3xl">
-          <motion.h1 
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            className="text-3xl sm:text-4xl md:text-6xl font-heading font-bold mb-6 break-words"
-          >
-            About PKA Global
-          </motion.h1>
-          <motion.p 
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.1 }}
-            className="text-base sm:text-lg text-primary-foreground/80"
-          >
-            A premier accounting, taxation, and business advisory firm empowering global businesses with precision, compliance, and strategic foresight.
-          </motion.p>
+        <div className="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+          <div className="max-w-3xl mx-auto">
+            <motion.h1 
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              className="text-3xl sm:text-4xl md:text-6xl font-heading font-bold mb-6 break-words"
+            >
+              About PKA Global
+            </motion.h1>
+            <motion.p 
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.1 }}
+              className="text-base sm:text-lg text-primary-foreground/80"
+            >
+              A premier accounting, taxation, and business advisory firm empowering global businesses with precision, compliance, and strategic foresight.
+            </motion.p>
+          </div>
         </div>
       </section>
 
       {/* Intro */}
       <section className="py-24 bg-background relative overflow-hidden">
-        <div className="container mx-auto px-4 grid md:grid-cols-2 gap-10 md:gap-16 items-center">
+        <div className="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8 grid md:grid-cols-2 gap-10 md:gap-16 items-center">
           <motion.div
             initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -72,7 +74,7 @@ export default function AboutPage() {
 
       {/* Mission & Vision */}
       <section className="py-24 bg-secondary/20">
-        <div className="container mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8">
+        <div className="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
