@@ -226,6 +226,18 @@ This document records the chronological history of updates, content restructurin
   * **Typography Harmonization:** Applied standardized H2 heading curve (`text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-primary mb-4 sm:mb-6 break-words`) across all section titles and controlled Hero H1 scaling (`text-2xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl`).
 * **Build / Lint Result:** `npm run lint` PASSED (0 errors, 0 warnings), `npm run build` PASSED (54 static pages generated in ~543ms).
 
+---
+
+## [July 29, 2026] - Phase 10: Primary Contact Email Update
+* **Prompt Summary:** Updated primary public contact email address to `hello@pkaglobal.co` on the Contact page.
+* **Files Modified:**
+  * [`app/contact/page.tsx`](file:///c:/Users/Arun/Documents/GitHub/pkassociates/app/contact/page.tsx)
+  * [`HISTORY.md`](file:///c:/Users/Arun/Documents/GitHub/pkassociates/HISTORY.md)
+* **Key Implementation Details:**
+  * Updated display email address in [`app/contact/page.tsx`](file:///c:/Users/Arun/Documents/GitHub/pkassociates/app/contact/page.tsx#L85) to `hello@pkaglobal.co`.
+* **Build / Lint Result:** `npm run lint` PASSED (0 errors, 0 warnings), `npm run build` PASSED (54 static pages generated in ~594ms).
+
+
 
 
 
