@@ -2,7 +2,6 @@
 
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
-import { BarChart3, PieChart, FileText } from "lucide-react";
 import Link from "next/link";
 import { AboutPreview } from "@/components/about-preview";
 import { WhyChooseUs } from "@/components/why-choose-us";
@@ -33,94 +32,34 @@ export default function Home() {
           className="absolute bottom-1/4 right-1/4 w-[30rem] h-[30rem] bg-primary/10 rounded-full blur-3xl"
         />
 
-        <div className="container mx-auto px-4 relative z-10 grid lg:grid-cols-2 gap-12 items-center">
+        <div className="mx-auto flex w-full max-w-5xl flex-col items-center px-4 text-center sm:px-6 lg:px-8 relative z-10">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
-            className="flex flex-col gap-6"
+            className="flex flex-col items-center w-full"
           >
-            <div className="inline-block bg-accent/20 text-accent px-3.5 sm:px-4 py-1.5 rounded-2xl sm:rounded-full font-semibold text-xs sm:text-sm max-w-full text-balance">
+            <div className="inline-block bg-accent/20 text-accent px-3.5 sm:px-4 py-1.5 rounded-2xl sm:rounded-full font-semibold text-xs sm:text-sm max-w-full text-balance mb-6">
               Simplifying Accounting. Strengthening Businesses. Driving Growth.
             </div>
-            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold font-heading leading-tight tracking-tight text-primary mt-4 break-words">
+            <h1 className="mx-auto max-w-4xl text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold font-heading leading-tight tracking-tight text-primary mb-6 break-words">
               Accounting, Tax & Business Compliance Solutions for <span className="text-accent">Growing Businesses</span>
             </h1>
-            <p className="text-base sm:text-lg text-muted-foreground max-w-xl leading-relaxed">
+            <p className="mx-auto max-w-2xl text-base sm:text-lg md:text-xl text-muted-foreground leading-relaxed mb-8">
               PK & Associates provides end-to-end accounting, bookkeeping, taxation, payroll, compliance, and outsourced finance solutions that help businesses stay compliant, improve financial visibility, and focus on sustainable growth.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 pt-4 w-full sm:w-auto">
+            <div className="flex w-full flex-col justify-center gap-3 sm:w-auto sm:flex-row items-center">
               <Link href="/contact" className="w-full sm:w-auto">
-                <Button size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90 active:bg-primary/95 h-14 px-8 text-base font-semibold w-full sm:w-auto transition-all duration-200 focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2">
+                <Button size="lg" className="w-full sm:w-auto bg-primary text-primary-foreground hover:bg-primary/90 active:bg-primary/95 h-14 px-8 text-base font-semibold transition-all duration-200 focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2">
                   Get Free Consultation
                 </Button>
               </Link>
               <Link href="/contact" className="w-full sm:w-auto">
-                <Button size="lg" variant="outline" className="h-14 px-8 text-base font-semibold border-primary text-primary hover:bg-primary hover:text-primary-foreground active:bg-primary/90 w-full sm:w-auto transition-all duration-200 focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2">
+                <Button size="lg" className="w-full sm:w-auto h-14 px-8 text-base font-semibold bg-black text-white border border-black hover:bg-slate-800 hover:text-white active:bg-slate-950 focus-visible:ring-2 focus-visible:ring-slate-400 focus-visible:ring-offset-2 transition-all duration-200 shadow-sm">
                   Request Proposal
                 </Button>
               </Link>
             </div>
-          </motion.div>
-
-          <motion.div
-            initial={{ opacity: 0, scale: 0.95 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 1, delay: 0.2 }}
-            className="relative h-[500px] w-full hidden lg:block"
-          >
-            <motion.div
-              initial={{ y: 0 }}
-              animate={{ y: [-10, 10, -10] }}
-              transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
-              className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full max-w-md h-80 bg-white/40 backdrop-blur-xl border border-white/60 rounded-3xl shadow-2xl p-6 flex flex-col gap-4"
-            >
-              <div className="flex items-center justify-between mb-4">
-                <div className="h-4 w-32 bg-primary/20 rounded-full animate-pulse" />
-                <div className="h-8 w-8 rounded-full bg-accent/20 flex items-center justify-center">
-                  <BarChart3 className="h-4 w-4 text-accent" />
-                </div>
-              </div>
-              <div className="h-32 w-full rounded-xl bg-gradient-to-tr from-primary/10 to-transparent border border-white/40 flex items-end p-4 gap-2">
-                {[40, 70, 45, 90, 65, 100].map((height, i) => (
-                  <motion.div
-                    key={i}
-                    initial={{ height: 0 }}
-                    animate={{ height: `${height}%` }}
-                    transition={{ duration: 1, delay: 0.5 + i * 0.1 }}
-                    className="flex-1 bg-primary/30 rounded-t-sm"
-                  />
-                ))}
-              </div>
-              <div className="flex gap-4 mt-auto">
-                <div className="h-12 flex-1 rounded-lg bg-white/50 border border-white/60 flex items-center px-4">
-                  <div className="h-2 w-16 bg-muted/40 rounded-full" />
-                </div>
-                <div className="h-12 flex-1 rounded-lg bg-accent/10 border border-accent/20 flex items-center px-4">
-                  <div className="h-2 w-16 bg-accent/40 rounded-full" />
-                </div>
-              </div>
-            </motion.div>
-
-            <motion.div
-              animate={{ y: [-15, 15, -15], rotate: [0, 5, 0] }}
-              transition={{ duration: 5, repeat: Infinity, ease: "easeInOut", delay: 1 }}
-              className="absolute -top-10 right-10 w-32 h-32 bg-white/80 backdrop-blur-lg border border-white shadow-xl rounded-2xl p-4 flex items-center justify-center"
-            >
-              <PieChart className="w-16 h-16 text-accent opacity-80" />
-            </motion.div>
-
-            <motion.div
-              animate={{ y: [15, -15, 15], rotate: [0, -5, 0] }}
-              transition={{ duration: 7, repeat: Infinity, ease: "easeInOut", delay: 2 }}
-              className="absolute -bottom-5 left-5 w-40 h-24 bg-white/80 backdrop-blur-lg border border-white shadow-xl rounded-2xl p-4 flex flex-col justify-center gap-2"
-            >
-              <div className="flex items-center gap-2">
-                <FileText className="w-5 h-5 text-success" />
-                <span className="text-xs font-bold text-success">Compliant</span>
-              </div>
-              <div className="h-2 w-20 bg-muted/30 rounded-full" />
-            </motion.div>
           </motion.div>
         </div>
       </section>

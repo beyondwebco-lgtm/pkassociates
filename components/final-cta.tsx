@@ -39,7 +39,7 @@ export function FinalCTA() {
             </Button>
           </Link>
           <Link href="/contact" className="w-full sm:w-auto">
-            <Button size="lg" variant="outline" className="border-white/40 text-white hover:bg-white hover:text-primary active:bg-white/90 h-14 px-8 sm:px-10 text-base sm:text-lg w-full sm:w-auto font-semibold transition-all duration-200 focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 focus-visible:ring-offset-primary">
+            <Button size="lg" className="w-full sm:w-auto h-14 px-8 sm:px-10 text-base sm:text-lg font-semibold bg-black text-white border border-black hover:bg-slate-800 hover:text-white active:bg-slate-950 focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-primary transition-all duration-200 shadow-sm">
               Request Proposal
             </Button>
           </Link>

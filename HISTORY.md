@@ -146,3 +146,17 @@ This document records the chronological history of updates, content restructurin
   * **Touch Target Verification:** Updated mobile drawer trigger button and footer social link buttons to `min-h-[44px] min-w-[44px]` for clean mobile touch interaction.
 * **Build / Lint Result:** `npm run lint` PASSED (0 errors, 0 warnings), `npm run build` PASSED (54 static pages generated in ~515ms).
 
+---
+
+## [July 29, 2026] - Phase 7: Hero Section Centering & Request Proposal Black Theme Styling
+* **Prompt Summary:** Centered hero section heading, description, and dual CTAs within a controlled max-width container (`max-w-5xl mx-auto flex-col items-center text-center`), and updated all Request Proposal CTAs to use black background (`bg-black`), white text (`text-white`), black border (`border-black`), dark-gray hover (`hover:bg-slate-800`), near-black active (`active:bg-slate-950`), and clear focus ring (`focus-visible:ring-2 focus-visible:ring-slate-400`).
+* **Files Modified:**
+  * [`app/page.tsx`](file:///c:/Users/Arun/Documents/GitHub/pkassociates/app/page.tsx)
+  * [`components/final-cta.tsx`](file:///c:/Users/Arun/Documents/GitHub/pkassociates/components/final-cta.tsx)
+  * [`HISTORY.md`](file:///c:/Users/Arun/Documents/GitHub/pkassociates/HISTORY.md)
+* **Key Fixes & Improvements:**
+  * **Centered Hero Layout:** Replaced grid layout in hero section with a centered flex column container (`mx-auto flex w-full max-w-5xl flex-col items-center px-4 text-center sm:px-6 lg:px-8`). Centered heading (`max-w-4xl mx-auto`), paragraph description (`max-w-2xl mx-auto`), and dual CTAs (`flex-col sm:flex-row gap-3 justify-center items-center w-full sm:w-auto`).
+  * **Request Proposal Black Theme:** Styled all Request Proposal buttons with `bg-black text-white border border-black hover:bg-slate-800 hover:text-white active:bg-slate-950 focus-visible:ring-2 focus-visible:ring-slate-400 focus-visible:ring-offset-2`, ensuring full visual consistency across light and dark background sections.
+* **Build / Lint Result:** `npm run lint` PASSED (0 errors, 0 warnings), `npm run build` PASSED (54 static pages generated in ~569ms).
+
+
