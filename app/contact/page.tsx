@@ -126,7 +126,7 @@ export default function ContactPage() {
               {/* Direct WhatsApp CTA Card */}
               <div className="bg-secondary/40 p-6 sm:p-8 rounded-3xl border border-border flex flex-col sm:flex-row items-center justify-between gap-6">
                 <div className="flex items-center gap-4">
-                  <div className="w-12 h-12 rounded-2xl bg-success/10 text-success flex items-center justify-center flex-shrink-0">
+                  <div className="w-12 h-12 rounded-2xl bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 flex items-center justify-center flex-shrink-0">
                     <MessageCircle className="w-6 h-6" />
                   </div>
                   <div>
@@ -135,7 +135,8 @@ export default function ContactPage() {
                   </div>
                 </div>
                 <a href="https://wa.me/919392870209" target="_blank" rel="noopener noreferrer" className="block w-full sm:w-auto">
-                  <Button className="w-full sm:w-auto bg-success hover:bg-success/90 text-white font-semibold whitespace-nowrap">
+                  <Button className="w-full sm:w-auto bg-emerald-600 hover:bg-emerald-700 text-white font-semibold whitespace-nowrap shadow-sm px-5 py-2.5 h-auto rounded-xl flex items-center justify-center gap-2">
+                    <MessageCircle className="w-4 h-4" />
                     Chat on WhatsApp
                   </Button>
                 </a>
