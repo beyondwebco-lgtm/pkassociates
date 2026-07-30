@@ -26,7 +26,7 @@ export default function ContactPage() {
     const subject = `Consultation Request: ${formData.service} - ${fullName}`;
     const body = `Hello PK and Associates Team,\n\nI would like to book a consultation for ${formData.service}.\n\n--- Client Details ---\nName: ${fullName}\nEmail: ${formData.email || "Not provided"}\nPhone: ${formData.phone || "Not provided"}\nService Required: ${formData.service}\n\n--- Message ---\n${formData.message || "Not provided"}\n\nThank you!`;
     
-    const mailtoUrl = `mailto:hello@pkaglobal.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    const mailtoUrl = `mailto:hello@pkaglobal.co?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
     window.location.href = mailtoUrl;
   };
 
@@ -105,8 +105,8 @@ export default function ContactPage() {
                     </div>
                     <div>
                       <h3 className="font-semibold text-lg">Email Address</h3>
-                      <a href="mailto:hello@pkaglobal.com" className="text-muted-foreground hover:text-primary transition-colors mt-1 block">
-                        hello@pkaglobal.com
+                      <a href="mailto:hello@pkaglobal.co" className="text-muted-foreground hover:text-primary transition-colors mt-1 block">
+                        hello@pkaglobal.co
                       </a>
                     </div>
                   </div>
