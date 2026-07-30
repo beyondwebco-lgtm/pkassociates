@@ -23,9 +23,11 @@ export default function ContactPage() {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     const fullName = `${formData.firstName} ${formData.lastName}`.trim() || "Not provided";
-    const textMessage = `Hello PK and Associates! I would like to book a consultation.\n\n*Name:* ${fullName}\n*Email:* ${formData.email || "Not provided"}\n*Phone:* ${formData.phone || "Not provided"}\n*Service Required:* ${formData.service}\n*Message:* ${formData.message || "Not provided"}`;
-    const whatsappUrl = `https://wa.me/919392870209?text=${encodeURIComponent(textMessage)}`;
-    window.open(whatsappUrl, "_blank");
+    const subject = `Consultation Request: ${formData.service} - ${fullName}`;
+    const body = `Hello PK and Associates Team,\n\nI would like to book a consultation for ${formData.service}.\n\n--- Client Details ---\nName: ${fullName}\nEmail: ${formData.email || "Not provided"}\nPhone: ${formData.phone || "Not provided"}\nService Required: ${formData.service}\n\n--- Message ---\n${formData.message || "Not provided"}\n\nThank you!`;
+    
+    const mailtoUrl = `mailto:hello@pkaglobal.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    window.location.href = mailtoUrl;
   };
 
   return (
@@ -252,7 +254,7 @@ export default function ContactPage() {
                   ></textarea>
                 </div>
                 <Button type="submit" className="w-full h-14 bg-primary text-primary-foreground hover:bg-accent hover:text-accent-foreground text-base sm:text-lg font-semibold transition-all duration-200 active:scale-[0.98] flex items-center justify-center gap-2">
-                  <MessageCircle className="w-5 h-5 text-success" /> Submit Request via WhatsApp
+                  <Mail className="w-5 h-5" /> Submit Request via Email
                 </Button>
               </form>
             </motion.div>
