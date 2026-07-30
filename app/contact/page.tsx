@@ -103,7 +103,9 @@ export default function ContactPage() {
                     </div>
                     <div>
                       <h3 className="font-semibold text-lg">Email Address</h3>
-                      <p className="text-muted-foreground mt-1">info@pkaglobal.com</p>
+                      <a href="mailto:hello@pkaglobal.com" className="text-muted-foreground hover:text-primary transition-colors mt-1 block">
+                        hello@pkaglobal.com
+                      </a>
                     </div>
                   </div>
 
