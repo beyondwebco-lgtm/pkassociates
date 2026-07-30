@@ -313,16 +313,16 @@ export const ukOutsourcing: CategoryContent = {
 };
 
 export const softwareExpertise = [
-  { name: "Xero", description: "Cloud-based accounting software tailored for small and growing businesses." },
-  { name: "QuickBooks Online", description: "Comprehensive financial management platform for seamless bookkeeping." },
-  { name: "Sage", description: "Advanced enterprise resource planning and robust payroll solutions." },
-  { name: "FreeAgent", description: "User-friendly accounting software designed for freelancers and small businesses." },
-  { name: "Dext", description: "Automated data extraction to streamline receipt and invoice processing." },
-  { name: "Hubdoc", description: "Automated document fetching and seamless Xero integration." },
-  { name: "BrightPay", description: "Award-winning payroll software ensuring 100% HMRC compliance." },
-  { name: "TaxCalc", description: "Powerful tax and accounts production software for professionals." },
-  { name: "IRIS", description: "Industry-leading integrated software suite for UK accountancy practices." },
-  { name: "Capium", description: "Innovative cloud accounting suite designed specifically for accountants." }
+  { name: "Xero", logo: "/software/xero.png", description: "Cloud-based accounting software tailored for small and growing businesses." },
+  { name: "QuickBooks Online", logo: "/software/quickbooks.png", description: "Comprehensive financial management platform for seamless bookkeeping." },
+  { name: "Sage", logo: "/software/sage.png", description: "Advanced enterprise resource planning and robust payroll solutions." },
+  { name: "FreeAgent", logo: "/software/freeagent.jpg", description: "User-friendly accounting software designed for freelancers and small businesses." },
+  { name: "Dext", logo: "/software/dext.png", description: "Automated data extraction to streamline receipt and invoice processing." },
+  { name: "Hubdoc", logo: "/software/hubdoc.png", description: "Automated document fetching and seamless Xero integration." },
+  { name: "BrightPay", logo: "/software/brightpay.jpg", description: "Award-winning payroll software ensuring 100% HMRC compliance." },
+  { name: "TaxCalc", logo: "/software/taxcalc.png", description: "Powerful tax and accounts production software for professionals." },
+  { name: "IRIS", logo: "/software/iris.jpg", description: "Industry-leading integrated software suite for UK accountancy practices." },
+  { name: "Capium", logo: "/software/capium.jpg", description: "Innovative cloud accounting suite designed specifically for accountants." }
 ];
 
 export const whyChooseUs = [

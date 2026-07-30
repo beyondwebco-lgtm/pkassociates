@@ -173,7 +173,16 @@ export default function ContactPage() {
                   <select className="w-full h-12 px-4 rounded-xl border border-input bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-ring">
                     <option>UK Outsourcing</option>
                     <option>India Accounting & Tax</option>
-                    <option>Global Services</option>
+                    <option>United Arab Emirates (UAE)</option>
+                    <option>Saudi Arabia</option>
+                    <option>Qatar</option>
+                    <option>Oman</option>
+                    <option>Bahrain</option>
+                    <option>Kuwait</option>
+                    <option>Europe</option>
+                    <option>Australia</option>
+                    <option>Singapore</option>
+                    <option>Canada</option>
                     <option>Business Registration</option>
                   </select>
                 </div>

@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Image from "next/image";
 import { CheckCircle2, Target, Eye, ShieldCheck } from "lucide-react";
 
 export default function AboutPage() {
@@ -52,22 +53,16 @@ export default function AboutPage() {
             initial={{ opacity: 0, scale: 0.95 }}
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
-            className="relative h-[300px] sm:h-[400px] rounded-3xl overflow-hidden bg-secondary/50 border border-border flex items-center justify-center p-6 sm:p-8"
+            className="relative h-[300px] sm:h-[400px] md:h-[450px] rounded-3xl overflow-hidden shadow-xl border border-border"
           >
-            {/* Abstract Graphic */}
-            <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-accent/10" />
-            <div className="relative z-10 w-full h-full border border-white/50 bg-white/40 backdrop-blur-md rounded-2xl p-6 shadow-xl flex flex-col justify-between">
-               <div className="h-4 w-32 bg-primary/20 rounded-full" />
-               <div className="space-y-4">
-                 <div className="h-8 w-full bg-accent/20 rounded-lg" />
-                 <div className="h-8 w-3/4 bg-accent/20 rounded-lg" />
-                 <div className="h-8 w-1/2 bg-accent/20 rounded-lg" />
-               </div>
-               <div className="flex gap-4">
-                 <div className="h-10 w-10 rounded-full bg-primary/10" />
-                 <div className="h-10 w-10 rounded-full bg-primary/10" />
-               </div>
-            </div>
+            <Image
+              src="/about_us.png"
+              alt="PKA Global Professional Accounting and Advisory Team"
+              fill
+              className="object-cover"
+              sizes="(max-width: 768px) 100vw, 50vw"
+              priority
+            />
           </motion.div>
         </div>
       </section>

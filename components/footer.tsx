@@ -94,7 +94,7 @@ export function Footer() {
 
       <div className="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8 mt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-center sm:text-left text-sm text-muted-foreground">
         <div>
-          &copy; {new Date().getFullYear()} PKA Global. All rights reserved.
+          &copy; {new Date().getFullYear()} PK and Associates. All rights reserved.
         </div>
         <div className="flex flex-wrap items-center justify-center sm:justify-end gap-4 sm:gap-6">
           <Link href="/privacy-policy" className="hover:text-primary transition-colors">Privacy Policy</Link>
